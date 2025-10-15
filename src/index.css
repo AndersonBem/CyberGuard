@@ -1,0 +1,80 @@
+:root {
+  /* === Cores principais === */
+  --color-primary: #003459;
+  --color-secondary: #2FC7FA;
+  --color-gradient-mid: #547A6B;
+  --color-gradient-end: #54717A;
+  --color-accent: #ff7b00;
+  --color-accent-hover: #e66a00;
+  --color-text-light: #ffffff;
+  --color-text-muted: #dcdcdc;
+
+  /* === Fonte === */
+  --font-default: 'Poppins', sans-serif;
+  --font-alt: 'Montserrat', sans-serif;
+  --font-title-size: 2rem;
+  --font-title-weight: 700;
+
+  /* === Container (tamanho do “celular”) === */
+  --container-width: 393px;
+  --container-height: 852px;
+  --container-radius: 20px;
+
+  /* === Banner superior === */
+  --banner-height: 200px;
+  --banner-bg: var(--color-primary);
+  --banner-radius-bottom-left: 50px;
+
+  /* === Botões e inputs === */
+  --form-gap: 15px;
+  --input-font-size: 1rem;
+  --button-radius: 20px;
+
+  /* === Footer === */
+      --footer-height: 194px;
+      --footer-bg: var(--color-primary);
+      --footer-opacity: 0.9;
+      --footer-text-size: 1rem;
+      --footer-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.25) inset;
+      --text-footer: rgba(255, 255, 255, 0.8);
+      --text-footer-terms: rgba(255, 255, 255, 0.7);
+      --font-footer:'Montserrat', sans-serif;
+
+  /* === Fundo geral === */
+  --background-color-outside: #000;
+}
+
+
+/* ============================================================
+   📱 CENTRALIZA O APP NO CENTRO DA TELA
+   ============================================================ */
+html,
+body {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: var(--background-color-outside);
+  overflow: hidden;
+}
+
+/* ============================================================
+   🧱 FRAME PRINCIPAL (SIMULA O CELULAR)
+   ============================================================ */
+#root {
+  width: var(--container-width);
+  height: var(--container-height);
+  border-radius: var(--container-radius);
+  background: linear-gradient(
+    172deg,
+    var(--color-secondary) 0%,
+    var(--color-gradient-mid) 70%,
+    var(--color-gradient-end) 95.89%
+  );
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  overflow: hidden;
+  position: relative;
+}
