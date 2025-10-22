@@ -1,53 +1,33 @@
-    /* --- FOOTER --- */
-    .footer-box {
-      box-sizing:  border-box;
-      width: 100%;
-      height: auto;
-      border-radius: 3px;
-      opacity: var(--footer-opacity);
-      background: var(--footer-bg);
-      box-shadow: var(--footer-shadow);
-      color: var(--color-text-light);
-      text-align: left;
-      font-size: var(--footer-text-size);
-      font-family: var(--font-footer);
-      font-weight: 400;
-      line-height: 1.4;
-      display: flex;
-      flex-direction: column;
-      justify-content: flex-start;
-      align-items: flex-start;
-      text-align: left;
-      padding: 1.06rem 2.94rem 3.5rem 2.31rem;
-
-    }
-
-    .footer-box p {
-      margin: 0;
-    }
-
-    .footer-box a {
-      color: var(--color-accent);
-      text-decoration: none;
-    }
-
-    .footer-box a:hover {
-      text-decoration: underline; }
+.app-footer {
+    background-color: var(--cor-primaria); /* Fundo azul */
+    width: 100%;
+    /* Mantemos o padding de 20px no topo/baixo e 10px nas laterais (para o respiro) */
+    padding: 1.25rem 0.625rem; 
+    box-shadow: 0 -0.125rem 0.625rem rgba(0, 0, 0, 0.1); 
     
-    .footer-terms {
-      padding-top: 2.19rem;
-      font-size: var(--footer-text-size); 
-      color: var(--color-text-light);
-      text-align: center;
-      align-items: flex-start;
-      text-align: left;
-      color: var(--text-footer-terms);
-    }
+    display: flex;
+    /* ALTERADO: Alinha os itens à esquerda do container */
+    justify-content: flex-start; 
+    align-items: center;
+}
 
-    .footer-box p:first-of-type {
-      color: var(--text-footer);
-    }
+/* O estilo do .btn-footer-home permanece igual. */
 
-    .footer-terms {
-      
-    }
+.btn-footer-home {
+    background-color: var(--cor-fundo-card); /* Fundo branco */
+    color: var(--cor-secundaria); /* Ícone laranja */
+    border: none;
+    border-radius: var(--raio-borda-btn); 
+    padding: 0.625rem 0;
+    width: 95%;
+    /* ALTERADO: Aumenta o max-width para 280px (original era 200px) */
+    max-width: 22.5rem; 
+    font-size: 2rem;
+    box-shadow: 0 0.3125rem 0.3125rem rgba(0, 0, 0, 0.2);
+    cursor: pointer;
+    transition: transform 0.2s ease;
+}
+
+.btn-footer-home:hover {
+    transform: scale(0.98);
+}

@@ -1,0 +1,15 @@
+header {
+  width: 100%;
+  height: 8.06rem; 
+  background-color: var(--cor-secundaria); 
+  color: var(--cor-fundo-card);
+  font-family: var(--font-default);
+  font-size: 3rem;
+  font-weight: 600;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-bottom-left-radius: 1.875rem; 
+  border-bottom-right-radius: 1.875rem; 
+}

@@ -1,19 +1,14 @@
 import './styles.css';
+import House from './assets/house.svg';
 
 export default function Footer({ text, children }){
     return (
         <div>
-            <footer className="footer-box">
-                <p>
-                    {text} <a href='#'>{children}</a>
-                </p>
-                <p className="footer-terms">
-                Ao cadastrar, você concorda com os 
-                <strong> Termos de Serviço </strong>
-                e a <strong>Política de Privacidade</strong>, 
-                incluindo o <strong>uso de cookies</strong>.
-                </p>
-            </footer>
+        <footer class="app-footer">
+            <button class="btn-footer-home">
+                <img src={House} alt='Logo da casa' />
+            </button>
+        </footer>
         </div>
     )
 }

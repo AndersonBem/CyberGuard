@@ -1,80 +1,65 @@
+/* Importação de Fonte */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap');
+
+/* Definição das Variáveis CSS (Custom Properties) */
 :root {
-  /* === Cores principais === */
-  --color-primary: #003459;
-  --color-secondary: #2FC7FA;
-  --color-gradient-mid: #547A6B;
-  --color-gradient-end: #54717A;
-  --color-accent: #ff7b00;
-  --color-accent-hover: #e66a00;
-  --color-text-light: #ffffff;
-  --color-text-muted: #dcdcdc;
+    /* Cores */
+    --cor-fundo-externo: #F0F0F0;
+    --cor-primaria: #4C6EF5; /* Azul do fundo principal */
+    --cor-secundaria: #FF8600; /* Laranja para TUDO */
+    --cor-secundaria-hover: #E67A00; 
+    --cor-fundo-card: #FFFFFF;
+    --cor-texto-digitado: #333333;
+    --cor-texto-secundario: #888; 
+    --cor-borda-input: var(--cor-secundaria);
+    --cor-sombra-btn: rgba(255, 136, 0, 0.4);
 
-  /* === Fonte === */
-  --font-default: 'Poppins', sans-serif;
-  --font-alt: 'Montserrat', sans-serif;
-  --font-title-size: 2rem;
-  --font-title-weight: 700;
+    /* Espaçamentos e Dimensões */
+    --largura-mockup: 375px;
+    --altura-mockup: 812px;
+    --raio-borda-mockup: 40px;
+    --padding-card: 40px 30px;
+    --raio-borda-card: 20px;
+    --raio-borda-btn: 10px;
+    --padding-btn-pequeno: 8px 20px; 
+    --padding-btn-cadastro: 12px 20px;
 
-  /* === Container (tamanho do “celular”) === */
-  --container-width: 393px;
-  --container-height: 852px;
-  --container-radius: 20px;
-
-  /* === Banner superior === */
-  --banner-height: 200px;
-  --banner-bg: var(--color-primary);
-  --banner-radius-bottom-left: 50px;
-
-  /* === Botões e inputs === */
-  --form-gap: 15px;
-  --input-font-size: 1rem;
-  --button-radius: 20px;
-
-  /* === Footer === */
-      --footer-height: 194px;
-      --footer-bg: var(--color-primary);
-      --footer-opacity: 0.9;
-      --footer-text-size: 1rem;
-      --footer-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.25) inset;
-      --text-footer: rgba(255, 255, 255, 0.8);
-      --text-footer-terms: rgba(255, 255, 255, 0.7);
-      --font-footer:'Montserrat', sans-serif;
-
-  /* === Fundo geral === */
-  --background-color-outside: #000;
+    /* Fontes */
+    --fonte-principal: 'Poppins', sans-serif;
+    --tamanho-fonte-padrao: 16px;
+    --tamanho-fonte-label: 14px;
+    --tamanho-fonte-logo-cg: 60px;
+    --tamanho-fonte-brand-name: 24px;
 }
 
-
-/* ============================================================
-   📱 CENTRALIZA O APP NO CENTRO DA TELA
-   ============================================================ */
-html,
+/* -------------------------------------------------------------------------- */
+/* ESTILOS GLOBAIS E MOCKUP                                                   */
+/* -------------------------------------------------------------------------- */
 body {
-  height: 100vh;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  background: var(--background-color-outside);
-  overflow: hidden;
+    background-color: var(--cor-fundo-externo);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0;
+    font-family: var(--fonte-principal);
 }
 
-/* ============================================================
-   🧱 FRAME PRINCIPAL (SIMULA O CELULAR)
-   ============================================================ */
-#root {
-  width: var(--container-width);
-  height: var(--container-height);
-  border-radius: var(--container-radius);
-  background: linear-gradient(
-    172deg,
-    var(--color-secondary) 0%,
-    var(--color-gradient-mid) 70%,
-    var(--color-gradient-end) 95.89%
-  );
+.device-mockup {
+    width: var(--largura-mockup);
+    height: var(--altura-mockup);
+    background-color: #E0E0E0; 
+    border-radius: var(--raio-borda-mockup);
+    overflow: hidden;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+    display: flex;
+    flex-direction: column;
+}
+
+.app-shell {
+  flex: 1;
+  background: var(--cor-primaria); /* azul principal */
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
-  align-items: center;
-  overflow: hidden;
-  position: relative;
 }
+
