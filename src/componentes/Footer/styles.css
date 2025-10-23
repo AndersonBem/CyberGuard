@@ -1,0 +1,33 @@
+.app-footer {
+    width: 100%;
+    padding: 1.25rem 0.625rem; 
+    margin-top: auto;
+    display: flex;
+    justify-content: flex-start; 
+    align-items: center;
+    margin-top: auto;
+    position: static;
+    border-bottom-left-radius: var(--raio-borda-mockup);
+    border-bottom-right-radius: var(--raio-borda-mockup);    
+}
+
+/* O estilo do .btn-footer-home permanece igual. */
+
+.btn-footer-home {
+    background-color: var(--cor-fundo-card); /* Fundo branco */
+    color: var(--cor-secundaria); /* Ícone laranja */
+    border: none;
+    border-radius: var(--raio-borda-btn); 
+    padding: 0.625rem 0;
+    width: 95%;
+    /* ALTERADO: Aumenta o max-width para 280px (original era 200px) */
+    max-width: 22.5rem; 
+    font-size: 2rem;
+    box-shadow: 0 0.3125rem 0.3125rem rgba(0, 0, 0, 0.2);
+    cursor: pointer;
+    transition: transform 0.2s ease;
+}
+
+.btn-footer-home:hover {
+    transform: scale(0.98);
+}
