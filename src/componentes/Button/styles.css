@@ -1,0 +1,131 @@
+/* ------------------------------------------------------------------
+   BASE (vale para TODOS os .btn-*)
+------------------------------------------------------------------ */
+.btn-entrar,
+.btn-cadastrar,
+.btn-google,
+.btn-comecar,
+.btn-form {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+  cursor: pointer;
+  border: none;
+  font-family: 'Poppins', sans-serif;
+  font-weight: 600;
+  transition: transform .2s ease, background-color .3s ease, border-color .3s ease;
+}
+
+/* sombras padrão */
+.btn-entrar,
+.btn-cadastrar,
+.btn-google,
+.btn-comecar,
+.btn-form {
+  box-shadow: 0 0.25rem 0.5rem rgba(0,0,0,.12);
+}
+
+/* Ícone opcional dentro do botão (ex.: Google) */
+.btn-icone {
+  width: 1.6rem;   /* 16px */
+  height: 1.6rem;  /* 16px */
+  margin-right: 1rem;
+}
+
+/* ------------------------------------------------------------------
+   VARIANTES "FILL" LARANJA (compartilham mesmas cores/hover)
+------------------------------------------------------------------ */
+.btn-entrar,
+.btn-cadastrar,
+.btn-comecar {
+  background: var(--cor-secundaria);
+  color: #fff;
+  border-radius: 0.9375rem; /* 15px */
+}
+
+.btn-entrar:hover,
+.btn-cadastrar:hover,
+.btn-comecar:hover {
+  background: var(--cor-secundaria-hover);
+  transform: translateY(-0.05rem);
+}
+
+/* ------------------------------------------------------------------
+   VARIANTE OUTLINE BRANCO (Google)
+------------------------------------------------------------------ */
+.btn-google {
+  background: var(--cor-fundo-card);        /* branco */
+  color: var(--cor-secundaria);             /* laranja */
+  border: 0.0625rem solid var(--cor-secundaria); /* 1px */
+  border-radius: 1.25rem;                   /* 20px */
+  gap: 1rem;
+  box-shadow: 0 0.25rem 0.5rem rgba(0,0,0,.08);
+}
+.btn-google:hover {
+  border-color: var(--cor-secundaria-hover);
+  transform: translateY(-0.05rem);
+}
+
+/* ------------------------------------------------------------------
+   VARIANTE BRANCA DE FORM (Tipo de denúncia / Nº BO)
+------------------------------------------------------------------ */
+.btn-form {
+  background: var(--cor-fundo-card);
+  color: var(--cor-secundaria);
+  border-radius: 0.625rem; /* 10px */
+  box-shadow: 0 0.25rem 0.625rem rgba(0,0,0,.15);
+}
+.btn-form:hover {
+  background-color: #fff4e6;
+  transform: scale(0.98);
+}
+
+/* ------------------------------------------------------------------
+   TAMANHOS ESPECÍFICOS (só o que muda por botão)
+------------------------------------------------------------------ */
+
+/* Entrar – 282×40 */
+.btn-entrar {
+  width: 17.625rem;   
+  height: 2.5rem;     
+  font-size: 1.25rem; 
+  margin: 0 auto;     
+}
+
+/* Cadastrar – 164×40 */
+.btn-cadastrar {
+  width: 10.25rem;    
+  height: 2.5rem;     
+  font-size: 1rem;    
+  margin: 2rem auto 0;
+  box-shadow: 0 0.4rem 0.7rem rgba(0,0,0,.25);
+}
+
+/* Google – 273×37 */
+.btn-google {
+  width: 17.06rem;    
+  height: 2.31rem;    
+  font-size: 1rem;    /
+  margin: 1.5rem auto;
+}
+
+/* Começar – 113×40 */
+.btn-comecar {
+  width: 7.063rem;    
+  height: 2.5rem;     
+  font-family: 'Inter', sans-serif;
+  font-weight: 400;
+  font-size: 1rem;    
+}
+
+/* Form – 265×39 */
+.btn-form {
+  width: 16.563rem;   
+  height: 2.438rem;   
+  font-size: 0.938rem;
+  margin: 0 auto 1rem;
+}
+
+/* utilitário opcional para centralizar wrappers */
+.actions-center { display: flex; justify-content: center; }

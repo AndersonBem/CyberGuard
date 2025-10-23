@@ -1,14 +1,14 @@
 .app-footer {
-    background-color: var(--cor-primaria); /* Fundo azul */
     width: 100%;
-    /* Mantemos o padding de 20px no topo/baixo e 10px nas laterais (para o respiro) */
     padding: 1.25rem 0.625rem; 
-    box-shadow: 0 -0.125rem 0.625rem rgba(0, 0, 0, 0.1); 
-    
+    margin-top: auto;
     display: flex;
-    /* ALTERADO: Alinha os itens à esquerda do container */
     justify-content: flex-start; 
     align-items: center;
+    margin-top: auto;
+    position: static;
+    border-bottom-left-radius: var(--raio-borda-mockup);
+    border-bottom-right-radius: var(--raio-borda-mockup);    
 }
 
 /* O estilo do .btn-footer-home permanece igual. */

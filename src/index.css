@@ -58,8 +58,15 @@ body {
 
 .app-shell {
   flex: 1;
-  background: var(--cor-primaria); /* azul principal */
   display: flex;
   flex-direction: column;
+  background: var(--cor-primaria); /* azul */
+  height: 100%;
+}
+
+/* Área que empurra o footer pro final */
+.app-content {
+  flex: 1;          /* <- ESSENCIAL */
+  overflow-y: auto; /* se quiser rolagem do conteúdo */
 }
 
