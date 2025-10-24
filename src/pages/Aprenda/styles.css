@@ -1,0 +1,56 @@
+.aprenda h2 {
+  display: block;
+  text-align: center;     /* Centraliza o texto */
+  font-size: 24px;        /* igual ao Figma */
+  line-height: 1;
+  font-weight: 600;
+  color: var(--cor-secundaria); /* laranja */
+  background: transparent;
+  padding: 6px 10px;
+}
+
+/* dá o respiro lateral para o “retângulo branco” ficar mais dentro do device */
+.aprenda{
+  padding: 0 22px;          /* <- ajuste principal (22px do seu Figma) */
+  display: flex;
+  flex-direction: column;
+  align-items: center;       /* garante centralização do card */
+  box-sizing: border-box;
+}
+
+/* raiz que vem de dentro do AulasList */
+.aprenda .aulas-card{
+  width: 100%;
+  max-width: 349px;
+  background: #fff;
+  border-radius: 10px;
+  box-shadow: 0 6px 18px rgba(0,0,0,.15);
+  padding: 16px;
+  margin: 12px 0 24px;
+  box-sizing: border-box;
+
+  /* chave para não cortar: */
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  height: auto;         /* cresce com a lista */
+  overflow: visible;    /* garante que nada seja “aparado” */
+}
+
+/* itens da lista (opcional, caso queira manter o visual) */
+.aprenda .aula-item{
+  display: grid;
+  grid-template-columns: 64px 1fr;
+  gap: 12px;
+  align-items: center;
+}
+
+.app-content{
+  overflow: auto;
+  -ms-overflow-style: none;   /* IE/Edge antigo */
+  scrollbar-width: none;      /* Firefox */
+  -webkit-overflow-scrolling: touch; /* iOS */
+}
+.app-content::-webkit-scrollbar{
+  width: 0; height: 0;        /* Chrome/Safari */
+}
