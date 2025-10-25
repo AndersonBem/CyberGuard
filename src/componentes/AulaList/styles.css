@@ -1,0 +1,91 @@
+.aulas-card {
+  background: #ffffff;
+  border-radius: 10px;
+  width: 349px;
+  height: 541px;
+  margin: 22px auto;
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.15);
+  padding: 16px;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.aula-item {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.icone-play svg {
+  width: 50px;
+  height: 50px;
+  fill: #ff8600;
+}
+
+.icone-play .linha {
+  display: block;
+  width: 80%;
+  height: 6px;
+  background: #ff8600;
+  border-radius: 4px;
+  margin-top: 6px;
+}
+
+.texto h3 {
+  color: #ff8600;
+  font-size: 16px;
+  font-weight: 700;
+  margin: 0;
+}
+
+.texto p {
+  color: #444;
+  font-size: 14px;
+  margin: 0;
+}
+
+/* miniatura */
+.aprenda .thumb {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.aprenda .thumb img{
+  width: 64px;
+  height: 64px;
+  object-fit: cover;
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0,0,0,.08);
+}
+
+/* player responsivo 16:9 dentro do card */
+.aprenda .player-wrap{
+  grid-column: 1 / -1;      /* ocupa as 2 colunas do grid */
+  width: 100%;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 6px 18px rgba(0,0,0,.15);
+  aspect-ratio: 16 / 9;     /* mantém proporção */
+}
+.aprenda .player-wrap iframe{
+  width: 100%;
+  height: 100%;
+  display: block;
+}
+
+/* título/descrição (você já tem algo parecido) */
+.aprenda .texto h3{
+  margin: 0 0 4px 0;
+  font-size: 16px;
+  font-weight: 700;
+  color: var(--cor-secundaria);
+}
+.aprenda .texto p{
+  margin: 0;
+  font-size: 14px;
+  color: #5f6b7a;
+}
+
+/* opcional: cursor de clique */
+.aprenda .aula-item{ cursor: pointer; }
