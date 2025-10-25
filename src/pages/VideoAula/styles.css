@@ -3,6 +3,7 @@
   display: flex;
   justify-content: center;
   box-sizing: border-box;
+  flex-direction: column;
 }
 
 /* botão “Voltar” acima do card */

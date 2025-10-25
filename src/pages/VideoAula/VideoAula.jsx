@@ -34,9 +34,10 @@ export default function BasePage(){
 
               <h2 id="video-title">{titulo}</h2>
               <p className="video-desc">{desc}</p>
-              <Link to="/aprenda" className="back" aria-label="Voltar">← Voltar</Link>
+              
               
             </div>
+            <Link to="/aprenda" className="back" aria-label="Voltar">← Voltar</Link>
             
           </section>
         </div>
