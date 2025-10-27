@@ -33,7 +33,7 @@ export default function AulasList() {
             key={v.id}
             to={`/videoaula/${v.id}`}
             state={{ titulo: v.titulo, desc: v.desc }}
-            className="aula-item"     // mantém seu layout/estilo
+            className="aula-item"     
             style={{ textDecoration: "none", color: "inherit" }}
             >
             <div className="thumb">

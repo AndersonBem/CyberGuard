@@ -5,7 +5,7 @@ import Header from "../../componentes/Header";
 import DeviceMockup from "../../layout/DeviceMockup";
 import "./styles.css";
 
-export default function BasePage(){
+export default function VideoAula(){
 
     const { id } = useParams();
     const { state } = useLocation();

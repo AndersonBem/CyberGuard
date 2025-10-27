@@ -66,7 +66,7 @@ body {
 
 /* Área que empurra o footer pro final */
 .app-content {
-  flex: 1;          /* <- ESSENCIAL */
-  overflow-y: auto; /* se quiser rolagem do conteúdo */
+  flex: 1;          
+  overflow-y: auto; 
 }
 

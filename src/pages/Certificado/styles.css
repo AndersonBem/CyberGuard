@@ -1,0 +1,81 @@
+/* container da página */
+.certificado {
+  padding: 1.25rem 1.375rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  box-sizing: border-box;
+}
+
+/* título da página */
+.certificado h2 {
+  text-align: center;
+  font-size: 1.5rem; 
+  font-weight: 700;
+  color: var(--cor-secundaria);
+  margin: 0 0 1.25rem 0;
+}
+
+/* selo no topo do card */
+.cert-banner {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 1.25rem;
+}
+.cert-badge {
+  width: 4.5rem;
+  height: 4.5rem;
+  background: #fff;
+  border-radius: 1rem;
+  box-shadow: 0 0.25rem 0.75rem rgba(0, 0, 0, 0.12);
+  display: grid;
+  place-items: center;
+}
+.cert-badge img {
+  width: 2.5rem;
+  height: 2.5rem;
+  display: block;
+}
+
+/* pill com o nome */
+.nome-pill {
+  background: #fff;
+  color: #111;
+  border-radius: 0.625rem;
+  padding: 0.75rem 1rem;
+  font-weight: 700;
+  text-align: center;
+  min-width: 12rem;
+  box-shadow: 0 0.25rem 0.75rem rgba(0,0,0,.12);
+}
+
+/* box de texto do certificado */
+.texto-cert {
+  background: #fff;
+  color: #111;
+  border-radius: 0.625rem;
+  padding: 1rem;
+  text-align: center;
+  font-size: 0.9375rem;
+  line-height: 1.35;
+  box-shadow: 0 0.25rem 0.75rem rgba(0,0,0,.12);
+}
+
+/* botão obter certificado */
+.btn-obter {
+  margin-top: 1rem;              
+  width: 100%;
+  background: #fff;
+  color: var(--cor-secundaria);
+  border: none;
+  border-radius: 0.625rem;
+  font-weight: 800;
+  padding: 0.875rem 1rem;
+  box-shadow: 0 0.25rem 0.75rem rgba(0,0,0,.12);
+  cursor: pointer;
+  transition: transform .15s ease, box-shadow .15s ease;
+}
+.btn-obter:hover {
+  transform: translateY(-0.0625rem);
+  box-shadow: 0 0.375rem 1rem rgba(0,0,0,.14);
+}

@@ -1,0 +1,15 @@
+.card-laranja {
+  width: 20.3125rem;        
+  min-height: 34.9375rem;   
+  background: var(--cor-secundaria);
+  border-radius: 0.625rem;  
+  box-shadow: 0 0.25rem 0.625rem rgba(0, 0, 0, 0.15);
+  padding: 1.5rem;
+  box-sizing: border-box;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1.25rem;
+  margin: 0 auto;
+}
