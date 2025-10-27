@@ -1,0 +1,76 @@
+/* Importação de Fonte */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap');
+
+/* Definição das Variáveis CSS (Custom Properties) */
+:root {
+    /* Cores */
+    --cor-fundo-externo: #F0F0F0;
+    --cor-primaria: #4C6EF5; /* Azul do fundo principal */
+    --cor-secundaria: #FF8600; /* Laranja para TUDO */
+    --cor-secundaria-hover: #E67A00; 
+    --cor-fundo-card: #FFFFFF;
+    --cor-texto-digitado: #333333;
+    --cor-texto-secundario: #888; 
+    --cor-borda-input: var(--cor-secundaria);
+    --cor-sombra-btn: rgba(255, 136, 0, 0.4);
+
+    /* Espaçamentos e Dimensões */
+    --largura-mockup: 375px;
+    --altura-mockup: 812px;
+    --raio-borda-mockup: 40px;
+    --padding-card: 40px 30px;
+    --raio-borda-card: 20px;
+    --raio-borda-btn: 10px;
+    --padding-btn-pequeno: 8px 20px; 
+    --padding-btn-cadastro: 12px 20px;
+
+    /* Fontes */
+    --fonte-principal: 'Poppins', sans-serif;
+    --tamanho-fonte-padrao: 16px;
+    --tamanho-fonte-label: 14px;
+    --tamanho-fonte-logo-cg: 60px;
+    --tamanho-fonte-brand-name: 24px;
+
+        /* Footer */
+    --footer-h: 72px; /* altura base do rodapé */
+}
+
+/* -------------------------------------------------------------------------- */
+/* ESTILOS GLOBAIS E MOCKUP                                                   */
+/* -------------------------------------------------------------------------- */
+body {
+    background-color: var(--cor-fundo-externo);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0;
+    font-family: var(--fonte-principal);
+}
+
+.device-mockup {
+    width: var(--largura-mockup);
+    height: var(--altura-mockup);
+    background-color: #E0E0E0; 
+    border-radius: var(--raio-borda-mockup);
+    overflow: hidden;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+    display: flex;
+    flex-direction: column;
+}
+
+.app-shell {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  background: var(--cor-primaria); /* azul */
+  height: 100%;
+  min-height: 0;
+}
+
+/* Área que empurra o footer pro final */
+.app-content {
+  flex: 1;          
+  overflow-y: auto; 
+}
+

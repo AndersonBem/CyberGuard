@@ -1,0 +1,99 @@
+.home-page .app-content {
+  flex-grow: 1;
+  overflow-y: auto !important;
+  overflow-x: hidden !important;
+  padding: 0 1rem;
+}
+
+.menu-container {
+  padding-top: 1rem;
+  padding-bottom: 0rem;
+}
+
+.botoes-grid {
+  display: grid !important;
+  grid-template-columns: 1fr 1fr !important;
+  gap: 0.75rem;
+  margin-bottom: 1.25rem;
+}
+
+.botao-item {
+  background-color: var(--cor-fundo-card) !important;
+  border-radius: var(--raio-borda-card);
+  padding: 1.25rem 0.625rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 0.1875rem 0.375rem rgba(0, 0, 0, 0.1);
+  cursor: pointer;
+  height: 6.25rem;
+  transition: transform 0.1s;
+  text-decoration: none;
+}
+
+.botao-item:active {
+  transform: scale(0.98);
+}
+
+.icone-placeholder {
+  font-size: 2.5rem;
+  color: var(--cor-secundaria);
+  margin-bottom: 0.5rem;
+}
+
+.botao-texto {
+  font-weight: 600;
+  font-size: var(--tamanho-fonte-padrao);
+  text-align: center;
+  color: var(--cor-texto-digitado);
+  margin: 0;
+}
+
+.missao-do-dia-card {
+  background-color: var(--cor-fundo-card) !important;
+  border-radius: var(--raio-borda-card);
+  padding: 0.625rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-shadow: 0 0.1875rem 0.375rem rgba(0, 0, 0, 0.1);
+}
+
+.missao-texto-container {
+  flex-grow: 1;
+  margin-right: 1rem;
+}
+
+.missao-titulo {
+  color: var(--cor-secundaria);
+  font-weight: 700;
+  margin: 0;
+}
+
+.missao-descricao {
+  color: var(--cor-texto-digitado);
+  margin: 0.25rem 0 0 0;
+}
+
+.missao-botao-comecar {
+  background-color: var(--cor-secundaria);
+  color: white;
+  font-weight: 700;
+  border: none;
+  border-radius: var(--raio-borda-btn);
+  padding: 0.625rem 1rem;
+  cursor: pointer;
+  white-space: nowrap;
+  box-shadow: 0 0.25rem 0.5rem var(--cor-sombra-btn);
+  transition: background-color 0.2s;
+  text-decoration: none;
+}
+
+.missao-botao-comecar:hover {
+  background-color: var(--cor-secundaria-hover);
+}
+
+.home-page .app-content {
+  overflow-y: auto !important;
+}

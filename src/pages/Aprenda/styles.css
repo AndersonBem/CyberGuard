@@ -1,0 +1,53 @@
+.aprenda h2 {
+  display: block;
+  text-align: center;
+  font-size: 1.5rem;
+  line-height: 1;
+  font-weight: 600;
+  color: var(--cor-secundaria);
+  background: transparent;
+  padding: 0.375rem 0.625rem;
+}
+
+.aprenda {
+  padding: 0 1.375rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  box-sizing: border-box;
+}
+
+.aprenda .aulas-card {
+  width: 100%;
+  max-width: 21.8125rem;
+  background: #fff;
+  border-radius: 0.625rem;
+  box-shadow: 0 0.375rem 1.125rem rgba(0, 0, 0, 0.15);
+  padding: 1rem;
+  margin: 0.75rem 0 1.5rem;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  height: auto;
+  overflow: visible;
+}
+
+.aprenda .aula-item {
+  display: grid;
+  grid-template-columns: 4rem 1fr;
+  gap: 0.75rem;
+  align-items: center;
+}
+
+.app-content {
+  overflow: auto;
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+  -webkit-overflow-scrolling: touch;
+}
+
+.app-content::-webkit-scrollbar {
+  width: 0;
+  height: 0;
+}
