@@ -2,14 +2,13 @@
 import { BrowserRouter, Route, Routes } from 'react-router-dom'
 import './App.css'
 import DeviceMockup from './layout/DeviceMockup.jsx'
-import BasePage from './pages/_Starter/BasePage.jsx'
 import Aprenda from './pages/Aprenda/Aprenda.jsx'
 import VideoAula from './pages/VideoAula/VideoAula.jsx'
 import MeusCertificados from './pages/MeusCertificados/MeusCertificados.jsx'
 import Certificado from './pages/Certificado/Certificado.jsx'
 import Home from './pages/Home/Home.jsx'
 
-function App() {
+function AppRoutes() {
   return (
     
       <BrowserRouter>
@@ -31,4 +30,4 @@ function App() {
   )
 }
 
-export default App
+export default AppRoutes
