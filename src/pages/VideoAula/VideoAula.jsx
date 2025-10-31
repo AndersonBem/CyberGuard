@@ -18,7 +18,7 @@ export default function VideoAula(){
         <div className="app-content">
         
           <section className="video" aria-labelledby="video-title">
-            
+            <Link to="/aprenda" className="back" aria-label="Voltar">← Voltar</Link>
             <div className="video-card">
 
               <div className="player-wrap">
@@ -37,7 +37,7 @@ export default function VideoAula(){
               
               
             </div>
-            <Link to="/aprenda" className="back" aria-label="Voltar">← Voltar</Link>
+            
             
           </section>
         </div>

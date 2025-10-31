@@ -2,7 +2,7 @@
 import AulasList from "../../componentes/AulaList";
 import Footer from "../../componentes/footer";
 import Header from "../../componentes/Header";
-import DeviceMockup from "../../layout/DeviceMockup";
+
 
 import "./styles.css"
 
