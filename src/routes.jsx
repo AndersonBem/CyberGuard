@@ -7,6 +7,7 @@ import VideoAula from './pages/VideoAula/VideoAula.jsx'
 import MeusCertificados from './pages/MeusCertificados/MeusCertificados.jsx'
 import Certificado from './pages/Certificado/Certificado.jsx'
 import Home from './pages/Home/Home.jsx'
+import Quiz from './pages/Quiz/Quiz.jsx'
 
 function AppRoutes() {
   return (
@@ -21,6 +22,7 @@ function AppRoutes() {
               <Route path ='/videoaula/:id' element={<VideoAula />} />
               <Route path ='/meuscertificados' element={<MeusCertificados />} />
               <Route path ='/certificado/:id' element={<Certificado />} />
+              <Route path ='/quiz' element={<Quiz />} />
             </Routes>
 
         </DeviceMockup>
