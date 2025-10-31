@@ -8,9 +8,9 @@ import { Link } from "react-router-dom";
 export default function Quiz() {
 
     const quizzes = [
-        { id: 1, path: "/quiz/1", label: "1" },
-        { id: 2, path: "/quiz/2", label: "2" },
-        { id: 3, path: "/quiz/3", label: "3" }
+        { id: 1, path: "/quizperguntas", label: "1" },
+        { id: 2, path: "/quizperguntas", label: "2" },
+        { id: 3, path: "/quizperguntas", label: "3" }
     ];
 
   return (
