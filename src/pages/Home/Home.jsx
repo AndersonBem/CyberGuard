@@ -7,12 +7,13 @@ import AprendaIcon from "./assets/aprenda.svg";
 import RankingIcon from "./assets/ranking.svg";
 import DenunciaIcon from "./assets/denuncia.svg";
 import ContatoIcon from "./assets/telefone.svg";
+import AlertaIcon from "./assets/alertaGolpe.svg";
 import "./styles.css";
 
 export default function Home() {
   const botoesPrincipais = [
     { icone: MissaoIcon, texto: "Missões Diárias", rota: "/missoes" },
-    { icone: SimuladorIcon, texto: "Simuladores", rota: "/simuladores" },
+    { icone: AlertaIcon, texto: "Alerta de Golpe", rota: "/alertagolpe" },
     { icone: AprendaIcon, texto: "Aprenda", rota: "/aprenda" },
     { icone: RankingIcon, texto: "Ranking", rota: "/ranking" },
     { icone: DenunciaIcon, texto: "Denúncias", rota: "/denuncias" },

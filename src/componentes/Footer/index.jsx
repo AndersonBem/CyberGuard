@@ -14,7 +14,7 @@ export default function Footer({ text, children }){
                 <Link to='/'>
                     <img src={Alerta} alt='Logo de Alerta' />
                 </Link>
-                <Link to='/'>
+                <Link to='/quiz'>
                     <img src={Quiz} alt='Logo de quiz' />
                 </Link>
                 <Link to='/'>
