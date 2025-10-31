@@ -8,6 +8,7 @@ import MeusCertificados from './pages/MeusCertificados/MeusCertificados.jsx'
 import Certificado from './pages/Certificado/Certificado.jsx'
 import Home from './pages/Home/Home.jsx'
 import Quiz from './pages/Quiz/Quiz.jsx'
+import QuizPerguntas from './pages/QuizPerguntas/QuizPerguntas.jsx'
 
 function AppRoutes() {
   return (
@@ -23,6 +24,7 @@ function AppRoutes() {
               <Route path ='/meuscertificados' element={<MeusCertificados />} />
               <Route path ='/certificado/:id' element={<Certificado />} />
               <Route path ='/quiz' element={<Quiz />} />
+              <Route path ='/quizperguntas' element={<QuizPerguntas />} />
             </Routes>
 
         </DeviceMockup>
