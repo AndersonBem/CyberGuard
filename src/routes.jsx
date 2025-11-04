@@ -9,6 +9,8 @@ import Certificado from './pages/Certificado/Certificado.jsx'
 import Home from './pages/Home/Home.jsx'
 import Quiz from './pages/Quiz/Quiz.jsx'
 import QuizPerguntas from './pages/QuizPerguntas/QuizPerguntas.jsx'
+import BemVindoCom from './pages/BemVindoCom/BemVindoCom.jsx'
+import Cadastro from './pages/Cadastro/Cadastro.jsx'
 
 function AppRoutes() {
   return (
@@ -19,12 +21,15 @@ function AppRoutes() {
             <Routes>
               {/* rotas aqui */}
               <Route path ='/' element={<Home />} />
+              <Route path ='/*' element={<Home />} />
               <Route path ='/aprenda' element={<Aprenda />} />
               <Route path ='/videoaula/:id' element={<VideoAula />} />
               <Route path ='/meuscertificados' element={<MeusCertificados />} />
               <Route path ='/certificado/:id' element={<Certificado />} />
               <Route path ='/quiz' element={<Quiz />} />
               <Route path ='/quizperguntas' element={<QuizPerguntas />} />
+              <Route path = '/bemvindocom' element={<BemVindoCom />} />
+              <Route path ='/cadastro' element={<Cadastro />} />
             </Routes>
 
         </DeviceMockup>

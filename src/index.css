@@ -74,3 +74,11 @@ body {
   overflow-y: auto; 
 }
 
+.app-fundo-br{
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  background: var(--cor-fundo-externo); /* azul */
+  height: 100%;
+  min-height: 0;
+}

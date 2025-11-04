@@ -55,6 +55,19 @@
   text-decoration: none;
 }
 
+.quiz-num{
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  inline-size: 1.1em;                /* largura bem justa ao dígito */
+  block-size: 1.1em;
+  margin-right: 0.25rem;             /* espaço exato antes do texto */
+  font-size: 1rem;
+  font-weight: 700;
+  color: var(--cor-secundaria);
+  border-radius: 0.25rem;            /* opcional */
+}
+
 .quiz-btn:hover {
   transform: scale(1.03);
 }

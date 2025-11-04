@@ -8,9 +8,9 @@ import { Link } from "react-router-dom";
 export default function Quiz() {
 
     const quizzes = [
-        { id: 1, path: "/quizperguntas", label: "1" },
-        { id: 2, path: "/quizperguntas", label: "2" },
-        { id: 3, path: "/quizperguntas", label: "3" }
+        { id: 1, path: "/quizperguntas", label: "1", texto: "Segurança Digital"},
+        { id: 2, path: "/quizperguntas", label: "2", texto: "Reconhecendo Golpes"},
+        { id: 3, path: "/quizperguntas", label: "3", texto: "Cuidados nas Redes"}
     ];
 
   return (
@@ -35,7 +35,8 @@ export default function Quiz() {
         <div className="quiz-options">
           {quizzes.map((quiz) => (
             <Link key={quiz.id} to={quiz.path} className="quiz-btn">
-              {quiz.label}
+              <span className="quiz-num">{quiz.label}</span>
+              <span className="quiz-texto">{quiz.texto}</span>
             </Link>
           ))}
         </div>

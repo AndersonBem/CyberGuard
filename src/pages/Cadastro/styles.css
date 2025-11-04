@@ -1,0 +1,72 @@
+.cadastro-container {
+  background-color: var(--cor-primaria);
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.cadastro-card {
+  background-color: #fff;
+  padding-left: 1.875rem;
+  padding: 1.25rem;
+  border-radius: 0.625rem;
+  width: 18.75rem;
+  box-shadow: 0 0.25rem 0.625rem rgba(0, 0, 0, 0.15);
+  text-align: center;
+  font-family: var(--fonte-principal);
+}
+
+.cadastro-card h1 {
+  color: var(--cor-secundaria);
+  margin-bottom: 1.5625rem;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+}
+
+label {
+  color: var(--cor-secundaria);
+  font-weight: 500;
+  margin-bottom: 0.3125rem;
+}
+
+input {
+  border: none;
+  border-bottom: 0.0625rem solid #555;
+  margin-bottom: 1.25rem;
+  padding: 0.625rem;
+  outline: none;
+}
+
+.btn-cadastrar {
+  background-color: var(--cor-secundaria);
+  color: var(--cor-fundo-card);
+  border: none;
+  border-radius: 1.25rem;
+  padding: 0.625rem;
+  margin-top: 1.25rem;
+  cursor: pointer;
+  font-weight: 600;
+  transition: transform 0.2s ease;
+  text-decoration: none;
+}
+
+.btn-cadastrar:hover {
+  transform: scale(1.05);
+}
+
+.link-login {
+  display: block;
+  margin-top: 0.625rem;
+  text-align: center;
+  color: var(--cor-secundaria);
+  text-decoration: none;
+}
+
+.link-login:hover {
+  text-decoration: underline;
+}
