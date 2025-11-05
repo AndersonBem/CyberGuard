@@ -11,6 +11,8 @@ import Quiz from './pages/Quiz/Quiz.jsx'
 import QuizPerguntas from './pages/QuizPerguntas/QuizPerguntas.jsx'
 import BemVindoCom from './pages/BemVindoCom/BemVindoCom.jsx'
 import Cadastro from './pages/Cadastro/Cadastro.jsx'
+import Alerta from './pages/Alerta/Alerta.jsx'
+import Ranking from './pages/Ranking/Ranking.jsx'
 
 function AppRoutes() {
   return (
@@ -30,6 +32,9 @@ function AppRoutes() {
               <Route path ='/quizperguntas' element={<QuizPerguntas />} />
               <Route path = '/bemvindocom' element={<BemVindoCom />} />
               <Route path ='/cadastro' element={<Cadastro />} />
+              <Route path ='/Alerta' element={<Alerta />} />
+              <Route path ='/Ranking' element={<Ranking />} />
+
             </Routes>
 
         </DeviceMockup>
