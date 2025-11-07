@@ -5,9 +5,9 @@
 :root {
     /* Cores */
     --cor-fundo-externo: #F0F0F0;
-    --cor-primaria: #4C6EF5; /* Azul do fundo principal */
-    --cor-secundaria: #FF8600; /* Laranja para TUDO */
-    --cor-secundaria-hover: #E67A00; 
+    --cor-primaria: #98E5F5; /* Azul do fundo principal */
+    --cor-secundaria: #4C6EF5; /* Laranja para TUDO */
+    --cor-secundaria-hover: #4366F4; 
     --cor-fundo-card: #FFFFFF;
     --cor-texto-digitado: #333333;
     --cor-texto-secundario: #888; 

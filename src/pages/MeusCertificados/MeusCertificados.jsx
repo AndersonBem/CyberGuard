@@ -2,7 +2,6 @@ import CardLaranja from "../../componentes/CardLaranja/index";
 import CertificadosList from "../../componentes/CertificadoList/index";
 import Footer from "../../componentes/footer";
 import Header from "../../componentes/Header";
-import DeviceMockup from "../../layout/DeviceMockup";
 import certific from "./assets/certific.svg";
 import "./styles.css";
 

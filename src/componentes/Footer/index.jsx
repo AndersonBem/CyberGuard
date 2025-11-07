@@ -3,7 +3,7 @@ import House from './assets/house.svg';
 import { Link } from 'react-router-dom';
 import Quiz from './assets/quiz.svg';
 import Alerta from './assets/alerta.svg';
-import Certificado from './assets/certificado.svg';
+import Ferramenta from './assets/ferramenta.svg';
 import Perfil from './assets/perfil.svg';
 
 export default function Footer({ text, children }){
@@ -21,7 +21,7 @@ export default function Footer({ text, children }){
                     <img src={House} alt='Logo da casa' />
                 </Link>
                 <Link to='/meuscertificados'>
-                    <img src={Certificado} alt='Logo de certificado' />
+                    <img src={Ferramenta} alt='Logo de ferramenta' />
                 </Link>
                 <Link to='/bemvindocom'>
                     <img src={Perfil} alt='Logo de Perfil' />
