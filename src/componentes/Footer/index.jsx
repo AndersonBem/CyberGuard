@@ -23,7 +23,7 @@ export default function Footer({ text, children }){
                 <Link to='/meuscertificados'>
                     <img src={Certificado} alt='Logo de certificado' />
                 </Link>
-                <Link to='/'>
+                <Link to='/bemvindocom'>
                     <img src={Perfil} alt='Logo de Perfil' />
                 </Link>
             </div>

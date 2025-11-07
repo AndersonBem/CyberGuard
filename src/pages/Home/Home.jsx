@@ -12,7 +12,7 @@ import "./styles.css";
 
 export default function Home() {
   const botoesPrincipais = [
-    { icone: MissaoIcon, texto: "Missões Diárias", rota: "/missoes" },
+    { icone: MissaoIcon, texto: "Missões Diárias", rota: "/MissoesDiarias" },
     { icone: AlertaIcon, texto: "Alerta de Golpe", rota: "/alerta" },
     { icone: AprendaIcon, texto: "Aprenda", rota: "/aprenda" },
     { icone: RankingIcon, texto: "Ranking", rota: "/ranking" },
