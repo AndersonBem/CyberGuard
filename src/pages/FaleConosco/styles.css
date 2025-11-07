@@ -1,5 +1,5 @@
 .contato-page {
-  background-color: var(--cor-fundo-principal, #3453e0);
+  background-color: var(--cor-fundo-principal);
   min-height: 100vh;
   display: flex;
   flex-direction: column;
@@ -52,7 +52,7 @@
   display: flex;
   align-items: center;
   gap: 4rem;
-  color: var(--cor-secundaria, #f77c00);
+  color: var(--cor-secundaria);
 }
 
 .contato-card-icon {
@@ -68,7 +68,7 @@
 /* --- BLOCO LARANJA --- */
 .contato-bloco-interno {
   
-  background-color: #FFA500; 
+  background-color: var(--cor-secundaria); 
   border-radius: 1.25rem;
   padding: 2rem;
   display: flex;
