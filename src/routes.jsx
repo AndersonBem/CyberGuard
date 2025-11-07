@@ -13,6 +13,7 @@ import BemVindoCom from './pages/BemVindoCom/BemVindoCom.jsx'
 import Cadastro from './pages/Cadastro/Cadastro.jsx'
 import Alerta from './pages/Alerta/Alerta.jsx'
 import Ranking from './pages/Ranking/Ranking.jsx'
+import FaleConosco from './pages/FaleConosco/FaleConosco.jsx'
 
 function AppRoutes() {
   return (
@@ -34,6 +35,7 @@ function AppRoutes() {
               <Route path ='/cadastro' element={<Cadastro />} />
               <Route path ='/Alerta' element={<Alerta />} />
               <Route path ='/Ranking' element={<Ranking />} />
+              <Route path ='/faleconosco' element={<FaleConosco />} />
 
             </Routes>
 

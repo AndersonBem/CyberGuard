@@ -17,7 +17,7 @@ export default function Home() {
     { icone: AprendaIcon, texto: "Aprenda", rota: "/aprenda" },
     { icone: RankingIcon, texto: "Ranking", rota: "/ranking" },
     { icone: DenunciaIcon, texto: "Denúncias", rota: "/denuncias" },
-    { icone: ContatoIcon, texto: "Fale conosco", rota: "/contato" },
+    { icone: ContatoIcon, texto: "Fale conosco", rota: "/faleconosco" },
   ];
 
   return (

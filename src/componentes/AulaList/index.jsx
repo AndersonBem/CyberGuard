@@ -51,27 +51,29 @@ export default function AulasList() {
     <div className="aulas-card">
       {erro && <p className="erro-aulas">{erro}</p>}
 
-      {videos.map((v) => (
-        <Link
-          key={v.id}
-          to={`/videoaula/${v.id}`}
-          state={{ titulo: v.titulo, desc: v.desc }}
-          className="aula-item"
-          style={{ textDecoration: "none", color: "inherit" }}
-        >
-          <div className="thumb">
-            <img
-              src={v.thumb || `https://img.youtube.com/vi/${v.id}/hqdefault.jpg`}
-              alt={`Miniatura: ${v.titulo}`}
-            />
-            <span className="linha" />
-          </div>
-          <div className="texto">
-            <h3>{v.titulo}</h3>
-            <p>{v.desc.length > 100 ? v.desc.slice(0, 100) + "..." : v.desc}</p>
-          </div>
-        </Link>
-      ))}
+        {videos.map((v) => (
+          <Link
+            key={v.id}
+            to={`/videoaula/${v.id}`}
+            state={{ titulo: v.titulo, desc: v.desc }}
+            className="aula-item"
+            style={{ textDecoration: "none", color: "inherit" }}
+          >
+            <div className="thumb">
+              <img
+                src={v.thumb || `https://img.youtube.com/vi/${v.id}/hqdefault.jpg`}
+                alt={`Miniatura: ${v.titulo}`}
+                loading="lazy"
+              />
+            </div>
+            <div className="texto">
+              <h3>{v.titulo}</h3>
+              <p>{v.desc?.length > 90 ? v.desc.slice(0, 90) + "..." : v.desc}</p>
+              {/* remova a linha de traços */}
+            </div>
+          </Link>
+        ))}
+
 
       <div style={{ width: "100%", display: "flex", justifyContent: "center", marginTop: "1rem" }}>
         {loading ? (

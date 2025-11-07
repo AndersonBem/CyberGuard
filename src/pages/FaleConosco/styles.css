@@ -1,0 +1,133 @@
+.contato-page {
+  background-color: var(--cor-fundo-principal, #3453e0);
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 1rem;
+}
+
+.app-header {
+  text-align: center;
+  margin-bottom: 1.5rem;
+}
+
+.app-header-status {
+  color: white;
+  font-weight: 500;
+  font-size: 0.95rem;
+}
+
+.app-header-title {
+  color: white;
+  font-size: 1.75rem;
+  font-weight: 700;
+  margin: 0.25rem 0;
+}
+
+.contato-content {
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+}
+
+.contato-card {
+  background-color: white;
+  border-radius: 0.50rem;
+  box-shadow: 0 0.25rem 0.5rem rgba(0, 0, 0, 0.15);
+  width: 100%;
+  max-width: 20rem;
+  margin-left: 15px;
+  height: 25rem;
+  padding: 0.90rem;
+  margin-top: 50px; 
+  display: flex;
+  flex-direction: column;
+  gap: 1.9rem;
+}
+
+.contato-card-title-wrapper {
+  display: flex;
+  align-items: center;
+  gap: 4rem;
+  color: var(--cor-secundaria, #f77c00);
+}
+
+.contato-card-icon {
+  width: 1.5rem;
+  height: 1.5rem;
+}
+
+.contato-card-title {
+  font-size: 1.25rem;
+  font-weight: 700;
+}
+
+/* --- BLOCO LARANJA --- */
+.contato-bloco-interno {
+  
+  background-color: #FFA500; 
+  border-radius: 1.25rem;
+  padding: 2rem;
+  display: flex;
+  flex-direction: column; /* Coloca as duas linhas (telefone e email) uma embaixo da outra */
+  gap: 5rem;            /* Espaço ENTRE a linha do telefone e a linha do email */
+  box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.4); /* Sombra solida atras do bloco laranja */
+}
+
+/* CADA LINHA (Ícone + Texto) DENTRO DO BLOCO LARANJA*/
+.contato-item-bloco {
+  display: flex;
+  align-items: center; 
+  gap: 1rem;           /* Espaço entre o ícone e o texto */
+}
+
+
+.contato-icone {
+  width: 40px;
+  height: 40px;
+}
+
+
+.contato-texto {
+  display: flex;
+  flex-direction: column;
+}
+
+
+.contato-titulo-bloco, .contato-conteudo-bloco {
+  margin: 0;
+  font-weight: bold;
+  color: black;
+}
+
+.contato-titulo-bloco {
+  font-size: 1rem;
+}
+
+.contato-conteudo-bloco {
+  font-size: 0.9rem;
+}
+
+
+footer {
+  margin-top: auto;
+}
+
+/* --- Ícones dentro do bloco laranja --- */
+.contato-icone {
+  width: 70px;   /* AUMENTE OU DIMINUA AQUI */
+  height: 70px;  /* AUMENTE OU DIMINUA AQUI */
+  position: relative;
+  left: -5px;
+}
+
+/* --- Ícone da tela principal --- */
+.fale-conosco-icone-titulo {
+  width: 60px;
+  height: 60px;
+  position: relative;
+  left: 50px;
+}

@@ -1,72 +1,107 @@
+:root{
+  --cor-fundo-card: #fff;
+  --cor-texto-digitado: #444;
+}
+
+/* container das aulas */
 .aulas-card {
   background: var(--cor-fundo-card);
   border-radius: 0.625rem;
-  width: 21.8125rem; 
-  height: 33.8125rem; 
-  margin: 1.375rem auto; 
-  box-shadow: 0 0.375rem 1.125rem rgba(0, 0, 0, 0.15); 
-  padding: 1rem; 
+  width: 21.8125rem;
+  height: 33.8125rem;
+  margin: 1.375rem auto;
+  box-shadow: 0 0.375rem 1.125rem rgba(0, 0, 0, 0.15);
+  padding: 1rem;
   display: flex;
   flex-direction: column;
-  gap: 1rem; 
+  gap: 1rem;
 }
 
-.aula-item {
+/* cada item vira um "card" */
+.aprenda .aula-item {
   display: flex;
-  align-items: center;
-  gap: 0.75rem; 
+  align-items: flex-start;
+  gap: 0.75rem;
+  background: #fff;
+  border-radius: 12px;
+  padding: 0.75rem;
+  margin: 0;                    /* separação ficará pelo gap do container e margin-bottom abaixo */
+  box-shadow: 0 3px 8px rgba(0,0,0,.08);
+  transition: transform .2s ease, box-shadow .2s ease;
+  cursor: pointer;
+  text-decoration: none;
+  color: inherit;
+  margin-bottom: 1rem;          /* espaça os cards entre si */
 }
 
-.icone-play svg {
-  width: 3.125rem; 
-  height: 3.125rem; 
-  fill: var(--cor-secundaria);
+.aprenda .aula-item:hover{
+  transform: translateY(-2px);
+  box-shadow: 0 6px 14px rgba(0,0,0,.12);
 }
 
-.icone-play .linha {
-  display: block;
-  width: 80%;
-  height: 0.375rem; 
-  background: var(--cor-secundaria);
-  border-radius: 0.25rem; 
-  margin-top: 0.375rem; 
-}
-
-.texto h3 {
-  color: var(--cor-secundaria);
-  font-size: 1rem; 
-  font-weight: 700;
-  margin: 0;
-}
-
-.texto p {
-  color: #444;
-  font-size: 0.875rem; 
-  margin: 0;
+.aprenda .aula-item:focus-visible{
+  outline: 2px solid var(--cor-primaria);
+  outline-offset: 2px;
 }
 
 /* miniatura */
-.aprenda .thumb {
+.aprenda .thumb{
   display: flex;
   flex-direction: column;
   align-items: center;
+
+  width: 4rem;                  /* 64px */
+  height: 4rem;
+  flex: 0 0 4rem;               /* fixa a largura na linha */
+  border-radius: 0.75rem;
+  overflow: hidden;
+  box-shadow: 0 0.25rem 0.625rem rgba(0,0,0,0.08);
 }
 
-.aprenda .thumb img {
-  width: 4rem; 
-  height: 4rem; 
+.aprenda .thumb img{
+  width: 100%;
+  height: 100%;
   object-fit: cover;
-  border-radius: 0.75rem; 
-  box-shadow: 0 0.25rem 0.625rem rgba(0, 0, 0, 0.08); 
+  display: block;
 }
 
-/* player responsivo dentro do card */
+/* conteúdo textual (título + descrição) */
+.aprenda .texto{
+  flex: 1;
+  min-width: 0;                 /* permite truncar corretamente */
+}
+
+.aprenda .texto h3{
+  margin: 0 0 0.25rem 0;
+  font-size: 1rem;
+  font-weight: 700;
+  color: var(--cor-secundaria);
+
+  display: -webkit-box;
+  -webkit-line-clamp: 2;        /* até 2 linhas */
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+
+.aprenda .texto p{
+  margin: 0;
+  font-size: 0.875rem;
+  color: var(--cor-texto-digitado);
+
+  display: -webkit-box;
+  -webkit-line-clamp: 2;        /* até 2 linhas */
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  opacity: .95;
+}
+
+/* player responsivo (se usar dentro desse card em outra tela) */
 .aprenda .player-wrap {
   grid-column: 1 / -1;
   width: 100%;
   border-radius: 0.75rem;
   overflow: hidden;
-  box-shadow: 0 0.375rem 1.125rem rgba(0, 0, 0, 0.15); 
+  box-shadow: 0 0.375rem 1.125rem rgba(0, 0, 0, 0.15);
   aspect-ratio: 16 / 9;
 }
 
@@ -76,21 +111,31 @@
   display: block;
 }
 
-/* título/descrição  */
-.aprenda .texto h3 {
-  margin: 0 0 0.25rem 0; 
-  font-size: 1rem; 
-  font-weight: 700;
-  color: var(--cor-secundaria);
+/* divisor opcional (se quiser usar em outras áreas) */
+.linha-separadora {
+  border-bottom: 1px dashed #ccc;
+  margin: 0.75rem 0;
+  opacity: 0.6;
 }
 
-.aprenda .texto p {
-  margin: 0;
-  font-size: 0.875rem; 
-  color: var(--cor-texto-digitado);
+/* responsivo leve */
+@media (max-width: 380px){
+  .aprenda .thumb{ width: 3.5rem; height: 3.5rem; flex-basis: 3.5rem; }
+  .aprenda .texto h3{ font-size: 0.94rem; }
+  .aprenda .texto p{ font-size: 0.82rem; }
 }
 
-
-.aprenda .aula-item {
-  cursor: pointer;
+/* (opcional) ícone de play – mantém caso você use em outro lugar */
+.icone-play svg{
+  width: 3.125rem;
+  height: 3.125rem;
+  fill: var(--cor-secundaria);
+}
+.icone-play .linha{
+  display: block;
+  width: 80%;
+  height: 0.375rem;
+  background: var(--cor-secundaria);
+  border-radius: 0.25rem;
+  margin-top: 0.375rem;
 }
