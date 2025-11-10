@@ -16,7 +16,7 @@ export default function Home() {
     { icone: AlertaIcon, texto: "Alerta de Golpe", rota: "/alerta" },
     { icone: AprendaIcon, texto: "Aprenda", rota: "/aprenda" },
     { icone: RankingIcon, texto: "Ranking", rota: "/ranking" },
-    { icone: DenunciaIcon, texto: "Denúncias", rota: "/denuncias" },
+    { icone: DenunciaIcon, texto: "Denúncias", rota: "/relatarGolpe" },
     { icone: ContatoIcon, texto: "Fale conosco", rota: "/faleconosco" },
   ];
 
