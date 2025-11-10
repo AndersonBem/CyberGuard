@@ -15,6 +15,7 @@ import Alerta from './pages/Alerta/Alerta.jsx'
 import Ranking from './pages/Ranking/Ranking.jsx'
 import FaleConosco from './pages/FaleConosco/FaleConosco.jsx'
 import MissoesDiarias from './pages/MissoesDiarias/MissoesDiarias.jsx'
+import DetectorQrcodes from './pages/DetectorQrcode/DetectorQrCode.jsx'
 
 function AppRoutes() {
   return (
@@ -38,7 +39,7 @@ function AppRoutes() {
               <Route path ='/Ranking' element={<Ranking />} />
               <Route path ='/faleconosco' element={<FaleConosco />} />
               <Route path ='/MissoesDiarias' element={<MissoesDiarias />} />
-
+              <Route path ='/DetectorQrcode' element={<DetectorQrcodes />} />
             </Routes>
 
         </DeviceMockup>
