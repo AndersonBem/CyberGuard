@@ -1,0 +1,67 @@
+/* DenunciaEnviada.css */
+
+/* --- Layout Geral da Página --- */
+.app-content-feedback {
+  flex: 1; /* Faz o conteúdo ocupar o espaço disponível */
+  display: flex;
+  flex-direction: column;
+  align-items: center;     /* Centraliza o card horizontalmente */
+  justify-content: center; /* Centraliza o card verticalmente */
+  padding: 1rem;
+  width: 100%;
+}
+
+/* --- Card Principal de Confirmação --- */
+.feedback-card {
+  background-color: var(--cor-secundaria); 
+  border-radius: 1.25rem;
+  width: 100%;
+  max-width: 15rem;
+  padding: 3rem 2rem; 
+  height: 28rem;
+  margin-left: -2.3rem;
+  margin-top: 0rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* Centraliza todo o conteúdo interno */
+  gap: 2.5rem;         /* Espaço grande entre o ícone, texto e botão */
+  box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.4);
+}
+
+/* --- Ícone de Check --- */
+.feedback-icon {
+  width: 80px; /* Ícone maior*/
+  height: 80px;
+}
+
+/* --- Texto de Confirmação --- */
+.feedback-text {
+  color: white;
+  font-size: 1.5rem;
+  font-weight: 600;
+  text-align: center;
+  margin: 0; 
+}
+
+/* --- Botão "Enviar nova denúncia" --- */
+.feedback-btn {
+  background-color: white;
+  color: var(--cor-primaria);
+  border: none;
+  border-radius: 0.75rem;
+  padding: 1rem;
+  margin-top: 100px;
+  width: 100%; /* Ocupa toda a largura do card (com o padding) */
+  box-sizing: border-box;
+  font-size: 1.1rem;
+  font-weight: 700;
+  text-align: center;
+  text-decoration: none;
+  cursor: pointer;
+  box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.4);
+  transition: transform 0.2s ease; /* Efeito suave ao clicar */
+}
+
+.feedback-btn:hover {
+  transform: scale(1.03); /* Leve aumento ao passar o mouse */
+}
