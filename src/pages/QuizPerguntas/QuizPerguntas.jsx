@@ -35,7 +35,7 @@ export default function QuizPerguntas() {
 
   const closeModal = () => setShowModal(false);
 
-  const nextPath = "/"; 
+  const nextPath = "/FimQuiz"; 
 
   return (
     <>

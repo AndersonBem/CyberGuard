@@ -39,7 +39,7 @@ export default function RelatarGolpe() {
               ></textarea>
 
               {/* Botão DENTRO do card */}
-              <Link to="/" className="denuncia-btn">
+              <Link to="/DenunciaEnviada" className="denuncia-btn">
                 ENVIAR DENÚNCIA
               </Link>
             </div>
