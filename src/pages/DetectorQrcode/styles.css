@@ -1,11 +1,11 @@
 .DetectordeQRcodefalso {
-  padding: 1.25rem 1.375rem;
+  padding: 1.25rem 1.38rem;
   display: flex;
   flex-direction: column;
   align-items: center;
   box-sizing: border-box;
   position: relative;
-  right: 5px;
+  right: 0.31rem;
 }
 
 .DetectordeQRcodefalso h2 {
@@ -43,10 +43,10 @@
   background-color: #fff;
   color: var(--cor-secundaria);
   font-weight: 600;
-  padding: 0.625rem 5rem;
-  border-radius: 0.625rem;
+  padding: 0.63rem 5rem;
+  border-radius: 0.63rem;
   border: none;
-  box-shadow: 0.25rem 0.25rem 0.625rem rgba(0, 0, 0, 0.15);
+  box-shadow: 0.25rem 0.25rem 0.63rem rgba(0, 0, 0, 0.15);
   cursor: pointer;
   font-size: 1rem;
   transition: all 0.2s ease-in-out;
@@ -55,50 +55,65 @@
 }
 
 .btn-saiba-mais:hover {
-  box-shadow: 0.375rem 0.375rem 0.75rem rgba(0, 0, 0, 0.25);
+  box-shadow: 0.38rem 0.38rem 0.75rem rgba(0, 0, 0, 0.25);
 }
 
 .qrcode-container {
   width: 16.31rem;
-  height: 4.37rem;
+  height: 4.38rem;
   background-color: #fff;
-  border-radius: 0.62rem; 
-  padding: 1rem; 
+  border-radius: 0.63rem;
+  padding: 1rem;
   box-shadow: 0 0.25rem 0.5rem rgba(0, 0, 0, 0.1);
   display: flex;
   align-items: center;
   justify-content: center;
   text-align: center;
-  font-size: 1rem; 
+  font-size: 1rem;
   color: #333;
   font-weight: 500;
 }
+
 .qrcode-texto {
   color: var(--cor-secundaria);
-  font-size: 0.68rem; 
+  font-size: 0.69rem;
   font-weight: 600;
   font-family: Arial, sans-serif;
 }
 
 .qrcode-imagem {
-
-    width: 149px;
-    height: 149px;
-    position: relative;
-    top : 70px;
+  width: 9.31rem;
+  height: 9.31rem;
+  position: relative;
+  top: 4.38rem;
 }
 
-.qrcode-container {
-  width: 295px;
-  height: 78px;
- color: #4366F4;
-color: #4366F4;
-text-align: center;
-font-family: Arial;
-font-size: 22px;
-font-style: normal;
-font-weight: 600;
-line-height: normal;
+.qrcode-container-link {
+  display: inline-block;
+  width: 18.44rem;
+  height: 4.88rem;
+  color: var(--cor-secundaria-hover);
+  text-align: center;
+  font-family: Arial;
+  font-size: 1.38rem;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 4.88rem;
+  text-decoration: none;
+  border-radius: 0.75rem;
+  background: var(--cor-fundo-card);
   position: relative;
-    top: 120px;
+  top: 7.5rem;
+  cursor: pointer;
+  border: 0.13rem solid black;
+  box-shadow: 0 0.13rem 0.31rem rgba(0, 0, 0, 0.4);
+  transition: all 0.2s ease-in-out;
+}
+
+.qrcode-container-link:hover {
+  transform: scale(1.02);
+}
+
+.qrcode-select {
+  margin-top: 9rem;
 }

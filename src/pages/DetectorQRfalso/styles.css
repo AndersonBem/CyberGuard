@@ -1,0 +1,63 @@
+.falsox {
+  width: 6.25rem;
+  height: 6.25rem;
+  position: relative;
+  top: 3.13rem;
+}
+
+.texto-alerta {
+  color: #fff;
+  text-align: center;
+  font-family: Inter;
+  font-size: 1.38rem;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+  position: relative;
+  top: 4.38rem;
+}
+
+.Denuncie {
+  display: inline-block;
+  width: 18.44rem;
+  height: 4.88rem;
+  flex-shrink: 0;
+  color: #fff;
+  text-align: center;
+  font-family: Arial;
+  font-size: 1.38rem;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+  border-radius: 0.94rem;
+  background: #f24822;
+  box-shadow: 0 0.25rem 0.25rem 0 rgba(0, 0, 0, 0.25);
+  position: relative;
+  top: 12.5rem;
+}
+
+.Denuncie-link {
+  display: inline-block;
+  width: 18.44rem;
+  height: 4.88rem;
+  color: #fff;
+  text-align: center;
+  font-family: Arial;
+  font-size: 1.38rem;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 4.88rem;
+  text-decoration: none;
+  border-radius: 0.75rem;
+  background: #f24822;
+  position: relative;
+  top: 7.5rem;
+  cursor: pointer;
+  border: 0.13rem solid black;
+  box-shadow: 0 0.13rem 0.31rem rgba(0, 0, 0, 0.4);
+  transition: all 0.2s ease-in-out;
+}
+
+.qrcode-container-link:hover {
+  transform: scale(1.02);
+}

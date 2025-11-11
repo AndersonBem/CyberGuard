@@ -1,0 +1,39 @@
+import Footer from "../../componentes/footer";
+import Header from "../../componentes/Header";
+import "./styles.css";
+import CardLaranja from "../../componentes/CardLaranja";
+import falsox from "./assets/falsox.png";
+import { Link } from "react-router-dom";
+
+export default function DetectorQRfalso() {
+  return (
+    <div className="app-shell">
+      <Header />
+      <div className="app-content">
+        <section className="DetectordeQRcodefalso" aria-labelledby="DetectordeQRcodefalso-title">
+          
+
+          <CardLaranja>
+        
+
+           <img className= "falsox" src={falsox} alt="falsox" />
+              <p className="texto-alerta">SEU QR CODE É FALSO!</p>
+             <Link
+                className="Denuncie-link"
+                to ={''}
+              >
+                DENUNCIE AQUI
+              </Link>
+
+
+
+
+        
+          </CardLaranja>
+ 
+        </section>
+      </div>
+      <Footer />
+    </div>
+  );
+}
