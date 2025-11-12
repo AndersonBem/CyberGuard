@@ -20,7 +20,7 @@ export default function DetectorQRfalso() {
               <p className="texto-alerta">SEU QR CODE É FALSO!</p>
              <Link
                 className="Denuncie-link"
-                to ={''}
+                to ={'/relatarGolpe'}
               >
                 DENUNCIE AQUI
               </Link>

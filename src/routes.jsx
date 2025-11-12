@@ -21,6 +21,8 @@ import DetectorQRverdadeiro from './pages/DetectorQRverdadeiro/DetectorQRverdade
 import RelatarGolpe from './pages/RelatarGolpe/RelatarGolpe.jsx'
 import DenunciaEnviada from './pages/DenunciaEnviada/DenunciaEnviada.jsx'
 import FimQuiz from './pages/FimQuiz/FimQuiz.jsx'
+import CentraldeAnalise from './pages/CentraldeAnalises/CentraldeAnalises.jsx'
+import Perfil from './pages/Perfil/Perfil.jsx'
 
 function AppRoutes() {
   return (
@@ -49,7 +51,9 @@ function AppRoutes() {
               <Route path ='/DetectorQRverdadeiro' element={<DetectorQRverdadeiro />} />
               <Route path ='/relatarGolpe' element={<RelatarGolpe />} />
               <Route path ='/DenunciaEnviada' element={<DenunciaEnviada />} />
-              <Route path ='/FimQuiz' element={<FimQuiz />} />              
+              <Route path ='/FimQuiz' element={<FimQuiz />} />
+              <Route path ='/CentraldeAnalises' element={<CentraldeAnalise />}/>
+              <Route path ='/Perfil' element={<Perfil />}/>              
             </Routes>
 
         </DeviceMockup>

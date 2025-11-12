@@ -1,10 +1,9 @@
 import CardLaranja from "../../componentes/CardLaranja/index";
-import Footer from "../../componentes/footer";
+import Footer from "../../componentes/Footer";
 import Header from "../../componentes/Header";
 import alerta from "./assets/alerta.png";
 import "./styles.css";
 import Alertalist from "../../componentes/Alertalist";
-import { Link } from "react-router-dom";
 
 export default function Alertas() {
   return (
@@ -21,23 +20,15 @@ export default function Alertas() {
               </div>
             </div>
 
-            <Alertalist mensagem="Golpe do Pix com Devolução • O golpista finge ter feito um Pix errado e pede para “devolver o valor”.• A transação inicial é feita com um comprovante falso, e a vítima transfere dinheiro real." />
+            
+            <Alertalist mensagem="Golpe do Pix com Devolução" />
 
-            <Alertalist mensagem="Assinaturas Automáticas em Testes Grátis
-              • Sites prometem “testes gratuitos” de produtos ou serviços, mas escondem assinaturas automáticas de valores altos.
-              • Após alguns dias, o valor é debitado no cartão de crédito." />
+            <Alertalist mensagem="Assinaturas Automáticas em Testes Grátis" />
 
-            <Alertalist mensagem="Links de Rastreamento de Encomenda
-              • Mensagens por SMS ou WhatsApp avisam sobre “entregas pendentes”.
-              • O link leva a páginas falsas dos Correios ou transportadoras para roubo de dados." />
+            <Alertalist mensagem="Links de Rastreamento de Encomenda" />
 
-            <Link
-              className="btn-saiba-mais"
-              to={''}
-              rel="noopener noreferrer"
-            >
-              SAIBA MAIS
-            </Link>
+            <Alertalist mensagem="Pix Programado" />
+
           </CardLaranja>
         </section>
       </div>

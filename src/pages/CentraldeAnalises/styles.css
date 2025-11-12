@@ -1,0 +1,91 @@
+.app-shell {
+  position: relative;
+}
+
+
+.app-content {
+  flex: 1 1 auto;
+  overflow: auto;
+  padding-bottom: 88px;      
+}
+
+
+.centraldeanalises {
+  padding: 1.25rem 1.375rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  box-sizing: border-box;
+}
+
+.centraldeanalises a {
+  text-decoration: none; 
+  cursor: pointer;
+}
+
+.centraldeanalises h2 {
+  text-align: center;
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: var(--cor-secundaria);
+  margin: 0 0 1.25rem 0;
+}
+
+.img-button-verificarlink {
+  padding: 0;
+  margin: 3px;
+  border: none;
+  background: transparent;
+  outline: none;
+  cursor: pointer;
+  line-height: 0;
+  position: relative; 
+  top: 0px;  
+  right: 90px; 
+}
+.img-button-escanearQrcode {
+  padding: 0;
+  margin: 3px;
+  border: none;
+  background: transparent;
+  outline: none;
+  cursor: pointer;
+  line-height: 0;
+  position: relative; 
+  top: -121px;  
+  right: -90px; 
+}
+
+.img-button-analisarBoleto {
+  padding: 0;
+  margin: 3px;
+  border: none;
+  background: transparent;
+  outline: none;
+  cursor: pointer;
+  line-height: 0;
+  position: relative; 
+  top: -115px;  
+  right: -5px; 
+}
+
+
+/* Estilo da imagem */
+.img-button__image {
+  display: block;
+  width: 171px;
+  height: 115px;
+  border: none;
+}
+
+.app-footer {
+  position: absolute;
+  bottom: 0;                   
+  left: 50%;
+  transform: translateX(-50%);
+  width: 100%;                 
+  max-width: var(--largura-mockup);
+  box-sizing: border-box;
+  border-bottom-left-radius: var(--raio-borda-mockup);
+  border-bottom-right-radius: var(--raio-borda-mockup);
+}
