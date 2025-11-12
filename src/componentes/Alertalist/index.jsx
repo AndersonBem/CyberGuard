@@ -2,9 +2,9 @@ import "./styles.css";
 
 const Alertalist = ({ mensagem }) => {
   return (
-    <div className="alerta-container">
+    <button className="alerta-container" onClick={() => alert("Botão clicado!")}>
       <p className="alerta-texto">{mensagem}</p>
-    </div>
+    </button>
   );
 };
 

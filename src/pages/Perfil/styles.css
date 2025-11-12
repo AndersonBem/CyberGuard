@@ -1,0 +1,121 @@
+.perfil-container {
+  background-color: var(--cor-primaria);
+  height:100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom:60px;
+
+}
+
+.perfil-card {
+  background-color: #fff;
+  padding-left: 1.875rem;
+  padding: 1.25rem;
+  padding-top:0.8 rem;
+  border-radius: 0.625rem;
+  width: 18.75rem;
+  height:22rem;
+  box-shadow: 0 0.25rem 0.625rem rgba(0, 0, 0, 0.15);
+  text-align: center;
+  font-family: var(--fonte-principal);
+  position: relative;
+  top: 40px;
+  left: 16px;
+  line-height: 0.2;
+  margin-bottom: 25px;  
+}
+
+.perfil-card h1 {
+  color: var(--cor-secundaria);
+  margin-bottom: 1.5625rem;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+}
+
+label {
+  color: var(--cor-secundaria);
+  font-weight: 600;
+  margin-bottom: 0.3125rem;
+}
+
+input {
+  border: none;
+  border-bottom: 0.0625rem solid #555;
+  margin-bottom: 1.25rem;
+  padding: 0.625rem;
+  outline: none;
+}
+
+.texto-senha {
+  font-size: 13px;
+  color: var(--cor-secundaria);
+  text-align: left;
+  margin-top: -5px;
+}
+
+.link-senha{
+  color: #007bff;
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 10px;
+  margin-top: 0.1rem;
+  text-align: left;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  top: -25px;
+}
+.link-logout{
+  color: #007bff;
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 10px;
+  margin-top: 0.1rem;
+  text-align: right;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  top: -60px;
+
+}
+
+.link-senha:hover {
+  text-decoration: underline;
+}
+
+.foto-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.foto-perfil {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%; /* deixa redonda */
+  object-fit: cover;
+  border: 2px solid var(--cor-secundaria);
+  margin-bottom: 10px;
+}
+
+.trocar-foto {
+  font-size: 13px;
+  color: #007bff;
+  cursor: pointer;
+  font-weight: 600;
+}
+
+.trocar-foto:hover {
+  text-decoration: underline;
+}
+
+#trocar-foto {
+  display: none; /* esconde o input real */
+}
+

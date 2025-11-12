@@ -20,10 +20,10 @@ export default function Footer({ text, children }){
                 <Link to='/'>
                     <img src={House} alt='Logo da casa' />
                 </Link>
-                <Link to='/meuscertificados'>
+                <Link to='/CentraldeAnalises'>
                     <img src={Ferramenta} alt='Logo de ferramenta' />
                 </Link>
-                <Link to='/bemvindocom'>
+                <Link to='/Perfil'>
                     <img src={Perfil} alt='Logo de Perfil' />
                 </Link>
             </div>
