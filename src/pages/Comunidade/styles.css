@@ -1,0 +1,96 @@
+
+.P1 {
+    text-align: center;
+    padding-top: 30%;
+    font-weight: 700;
+}
+
+.span1 {
+    color: rgba(67, 102, 244, 1);
+}
+
+.logo-comunidade{
+    margin-top: -2rem;
+    margin-bottom: -8rem;
+}
+.post-card {
+    background: rgba(255, 245, 230, 1);
+    padding: 1.25rem;               
+    border-radius: 0.875rem;      
+    box-shadow: 0rem 0.25rem 0.75rem rgba(0,0,0,0.10); 
+    padding-left: 10%;
+    margin-left: 10%;
+    margin-bottom: 3%;
+    margin-right: 5%;
+}
+
+.username {
+    font-size: 0.95rem;
+    color: #0066ff;
+    font-weight: 700;
+    margin-bottom: 0.5rem;         
+}
+
+.post-title {
+    font-size: 0.95rem;
+    font-weight: 700;
+    margin-bottom: 0.75rem;        
+    color: #ff3838;
+}
+
+.post-title.alert {
+    font-size: 0.95rem;
+    color: #ff3838;
+}
+
+.post-card p {
+    margin: 0.375rem 0;          
+    color: #222;
+    font-size: 0.95rem;
+}
+
+.question {
+    margin-top: 0.625rem;           
+    font-weight: 600;
+    color: #0066ff;
+}
+
+.actions {
+    display: flex;
+    gap: 0.9375rem;                 
+    margin-top: 0.75rem;            
+
+    border-top: 0.0625rem solid black; 
+}
+
+.action {
+    font-size: 1.3rem;
+    cursor: pointer;
+    transition: 0.2s;
+}
+
+.action:hover {
+    transform: scale(1.2);
+}
+
+.info {
+    margin-top: 0.625rem;           
+    font-size: 0.85rem;
+    color: #777;
+    display: flex;
+    justify-content: space-between;
+}
+
+.back {
+  align-self: flex-start;
+  margin-bottom: 0.875rem;
+  margin-top: 0.25rem;
+  background: var(--cor-secundaria);
+  color: var(--cor-primaria);
+  font-weight: 700;
+  border-radius: 0.625rem;
+  padding: 0.375rem 0.875rem;
+  text-decoration: none;
+  box-shadow: 0 0.25rem 0.75rem rgba(0, 0, 0, 0.12);
+  transition: all 0.2s ease;
+}

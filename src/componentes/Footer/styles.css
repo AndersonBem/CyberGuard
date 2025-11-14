@@ -20,15 +20,27 @@
     max-width: 22.5rem;
     box-shadow: 0 0.3125rem 0.3125rem rgba(0, 0, 0, 0.2);
     display: flex;
-    justify-content: space-around;   /* mantém espaçamento igual */
-    align-items: baseline;           /* corrige o leve desalinhamento */
+    justify-content: space-around;   
+    align-items: center;           
     transition: transform 0.2s ease;
 }
 
-/* Força todos os ícones a ficarem visualmente iguais */
+.btn-footer-home a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 32px;   
+  height: 32px;
+}
+
+
 .btn-footer-home img {
     width: 26px;
     height: 26px;
     display: block;
     object-fit: contain;
+}
+
+.analise img {
+  transform: scale(1.2);  
 }

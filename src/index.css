@@ -4,7 +4,7 @@
 /* Definição das Variáveis CSS (Custom Properties) */
 :root {
     /* Cores */
-    --cor-fundo-externo: #F0F0F0;
+    --cor-fundo-externo: #ffffff;
     --cor-primaria: #98E5F5; /* Azul do fundo principal */
     --cor-secundaria: #4C6EF5; /* Laranja para TUDO */
     --cor-secundaria-hover: #4366F4; 

@@ -12,7 +12,7 @@ export default function DetectorQRverdadeiro() {
       <div className="app-content">
         <section className="DetectordeQRcodefalso" aria-labelledby="DetectordeQRcodefalso-title">
           
-
+          <Link to="/DetectorQrcode" className="back" aria-label="Voltar">← Voltar</Link>
           <CardLaranja>
         
 

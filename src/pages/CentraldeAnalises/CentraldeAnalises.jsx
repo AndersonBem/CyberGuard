@@ -1,7 +1,7 @@
 import { Link } from "react-router-dom";
-import verificarlink from "../CentraldeAnalises/assets/verificarlink.png";
-import escanearQrcode from "../CentraldeAnalises/assets/escanearQrcode.png";
-import analisarBoleto from "../CentraldeAnalises/assets/analisarBoleto.png";
+import verificarlink from "../CentraldeAnalises/assets/verificarlink3.png";
+import escanearQrcode from "../CentraldeAnalises/assets/escanearQrcode3.png";
+import analisarBoleto from "../CentraldeAnalises/assets/analisarBoleto3.png";
 import "./styles.css";
 import Noticias from "../../componentes/API/Noticias";
 import Header from "../../componentes/Header";

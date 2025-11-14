@@ -18,9 +18,11 @@
 /* Título da página */
 .titulo-pagina {  
   text-align: center;
-  color: #ff6600;
-  font-size: 18px;
-  margin-bottom: 2px;
+  color:var(--cor-secundaria);
+  font-size: 32px;
+  margin-bottom: 0px;
+  margin-left: -1rem;
+  margin-top: -0.1rem;
 }
 
 /* Loading */
@@ -58,7 +60,7 @@
 
 .noticia-titulo {
   font-size: 16px;
-  color: #222;
+  color: #222222 !important;
   margin-bottom: 8px;
   font-weight:600;
 }

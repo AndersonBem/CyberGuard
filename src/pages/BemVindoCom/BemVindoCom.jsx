@@ -1,7 +1,7 @@
 import { Link } from "react-router-dom";
 import Footer from "../../componentes/footer";
 import Header from "../../componentes/Header";
-import Logo from "./assets/logocomunidade.svg";
+import Logo from "./assets/lococomunidade4.png";
 import "./styles.css";
 
 
@@ -16,7 +16,7 @@ export default function BemVindoCon(){
 
                 <h5>Conheça o fórum da comunidade <span className="Span01">CyberGuard</span>!</h5>
 
-                <button className="botaoComunidade">Entrar na comunidade</button>
+                <Link to={'/comunidade'} className="botaoComunidade">Entrar na comunidade</Link>
 
 
                 <Link className="Sair" to={'/'}> Sair </Link>

@@ -2,8 +2,8 @@ import './styles.css';
 import House from './assets/house.svg';
 import { Link } from 'react-router-dom';
 import Quiz from './assets/quiz.svg';
-import Alerta from './assets/alerta.svg';
-import Ferramenta from './assets/ferramenta.svg';
+import Comunidade from './assets/comunidade.svg';
+import Analise from './assets/analise.svg';
 import Perfil from './assets/perfil.svg';
 
 export default function Footer({ text, children }){
@@ -11,8 +11,8 @@ export default function Footer({ text, children }){
         <div>
         <footer className="app-footer">
             <div className="btn-footer-home">
-                <Link to='/'>
-                    <img src={Alerta} alt='Logo de Alerta' />
+                <Link to='/bemvindocom'>
+                    <img src={Comunidade} alt='Logo de comunidade' />
                 </Link>
                 <Link to='/quiz'>
                     <img src={Quiz} alt='Logo de quiz' />
@@ -20,8 +20,8 @@ export default function Footer({ text, children }){
                 <Link to='/'>
                     <img src={House} alt='Logo da casa' />
                 </Link>
-                <Link to='/CentraldeAnalises'>
-                    <img src={Ferramenta} alt='Logo de ferramenta' />
+                <Link to='/CentraldeAnalises' className='analise'>
+                    <img src={Analise} alt='Logo de analise' />
                 </Link>
                 <Link to='/Perfil'>
                     <img src={Perfil} alt='Logo de Perfil' />

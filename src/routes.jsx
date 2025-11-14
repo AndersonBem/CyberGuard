@@ -23,6 +23,7 @@ import DenunciaEnviada from './pages/DenunciaEnviada/DenunciaEnviada.jsx'
 import FimQuiz from './pages/FimQuiz/FimQuiz.jsx'
 import CentraldeAnalise from './pages/CentraldeAnalises/CentraldeAnalises.jsx'
 import Perfil from './pages/Perfil/Perfil.jsx'
+import Comunidade from './pages/Comunidade/comunidade.jsx'
 
 function AppRoutes() {
   return (
@@ -53,7 +54,8 @@ function AppRoutes() {
               <Route path ='/DenunciaEnviada' element={<DenunciaEnviada />} />
               <Route path ='/FimQuiz' element={<FimQuiz />} />
               <Route path ='/CentraldeAnalises' element={<CentraldeAnalise />}/>
-              <Route path ='/Perfil' element={<Perfil />}/>              
+              <Route path ='/Perfil' element={<Perfil />}/>
+              <Route path ='/Comunidade' element={<Comunidade />}/>                
             </Routes>
 
         </DeviceMockup>

@@ -9,6 +9,11 @@
   background-color: var(--cor-secundaria);
   font-family: var(--fonte-principal);
   margin-bottom: 26%;
+  text-decoration: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 1px 4px 8px rgba(0, 0, 0, 0.25);
 }
 
 
