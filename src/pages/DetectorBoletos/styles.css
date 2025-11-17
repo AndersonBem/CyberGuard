@@ -1,0 +1,119 @@
+.DetectordeQRcodefalso {
+  padding: 0.25rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  box-sizing: border-box;
+  position: relative;
+  right: 0.31rem;
+}
+
+.DetectordeQRcodefalso h2 {
+  text-align: center;
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: var(--cor-secundaria);
+  margin: 0 0 1.25rem 0;
+}
+
+.cert-banner {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 1.25rem;
+}
+
+.cert-badge {
+  width: 4.5rem;
+  height: 4.5rem;
+  background: #fff;
+  border-radius: 1rem;
+  box-shadow: 0 0.25rem 0.75rem rgba(0, 0, 0, 0.12);
+  display: grid;
+  place-items: center;
+}
+
+.cert-badge img {
+  width: 2.5rem;
+  height: 2.5rem;
+  display: block;
+}
+
+.btn-saiba-mais {
+  display: inline-block;
+  background-color: #fff;
+  color: var(--cor-secundaria);
+  font-weight: 600;
+  padding: 0.63rem 5rem;
+  border-radius: 0.63rem;
+  border: none;
+  box-shadow: 0.25rem 0.25rem 0.63rem rgba(0, 0, 0, 0.15);
+  cursor: pointer;
+  font-size: 1rem;
+  transition: all 0.2s ease-in-out;
+  text-decoration: none;
+  text-align: center;
+}
+
+.btn-saiba-mais:hover {
+  box-shadow: 0.38rem 0.38rem 0.75rem rgba(0, 0, 0, 0.25);
+}
+
+.qrcode-container {
+  width: 16.31rem;
+  height: 4.38rem;
+  background-color: #fff;
+  border-radius: 0.63rem;
+  padding: 1rem;
+  box-shadow: 0 0.25rem 0.5rem rgba(0, 0, 0, 0.1);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  font-size: 1rem;
+  color: #333;
+  font-weight: 500;
+}
+
+.qrcode-texto {
+  color: var(--cor-secundaria);
+  font-size: 0.69rem;
+  font-weight: 600;
+  font-family: Arial, sans-serif;
+}
+
+.qrcode-imagem {
+  width: 7.31rem;
+  height: 7.31rem;
+  position: relative;
+  top: 4.38rem;
+}
+
+.qrcode-container-link {
+  display: inline-block;
+  width: 18.44rem;
+  height: 4.88rem;
+  color: var(--cor-secundaria-hover);
+  text-align: center;
+  font-family: Arial;
+  font-size: 1.38rem;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 4.88rem;
+  text-decoration: none;
+  border-radius: 0.75rem;
+  background: var(--cor-fundo-card);
+  position: relative;
+  top: 7.5rem;
+  cursor: pointer;
+  border: 0.13rem solid black;
+  box-shadow: 0 0.13rem 0.31rem rgba(0, 0, 0, 0.4);
+  transition: all 0.2s ease-in-out;
+}
+
+.qrcode-container-link:hover {
+  transform: scale(1.02);
+}
+
+.qrcode-select {
+  margin-top: 9rem;
+}

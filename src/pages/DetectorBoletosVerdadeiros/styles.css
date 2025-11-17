@@ -1,0 +1,38 @@
+.vector {
+  width: 6.25rem;
+  height: 5.31rem;
+  position: relative;
+  top: 3.13rem;
+}
+
+.Escaneia {
+  width: 18.44rem;
+  height: 4.88rem;
+  flex-shrink: 0;
+  color: var(--cor-secundaria-hover);
+  text-align: center;
+  font-family: Arial;
+  font-size: 1.38rem;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+  border-radius: 0.94rem;
+  background: #fff;
+  box-shadow: 0 0.25rem 0.25rem 0 rgba(0, 0, 0, 0.25);
+  position: relative;
+  top: 12.5rem;
+}
+
+.back {
+  align-self: flex-start;
+  margin-bottom: 1rem;
+  margin-top: 0rem;
+  background: var(--cor-fundo-card);
+  color: var(--cor-secundaria);
+  font-weight: 700;
+  border-radius: 0.625rem;
+  padding: 0.375rem 0.875rem;
+  text-decoration: none;
+  box-shadow: 0 0.25rem 0.75rem rgba(0, 0, 0, 0.12);
+  transition: all 0.2s ease;
+}

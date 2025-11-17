@@ -34,7 +34,7 @@ export default function CentraldeAnalise () {
             />
           </Link>
 
-          <Link to="/analisar-boleto" className="img-button-analisarBoleto">
+          <Link to="/DetectorBoletos" className="img-button-analisarBoleto">
             <img
               src={analisarBoleto}
               alt="Analisar Boleto"

@@ -6,7 +6,7 @@ import Comunidade from './assets/comunidade.svg';
 import Analise from './assets/analise.svg';
 import Perfil from './assets/perfil.svg';
 
-export default function Footer({ text, children }){
+export default function footer({ text, children }){
     return (
         <div>
         <footer className="app-footer">

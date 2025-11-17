@@ -28,6 +28,9 @@ import DetectorLink from './pages/DetectorLink/DetectorLink.jsx'
 import DetectorLinkfalso from './pages/DetectorLinkfalso/DetectorLinkfalso.jsx'
 import DetectorLinkverdadeiro from './pages/DetectorLinkverdadeiro/DetectorLinkverdadeiro.jsx'
 import Login from './pages/Login/Login.jsx'
+import DetectorBoletos from './pages/DetectorBoletos/DetectorBoletos.jsx'
+import DetectorBoletosVerdadeiros from './pages/DetectorBoletosVerdadeiros/DetectorBoletosVerdadeiros.jsx'
+import DetectorBoletosFalso from './pages/DetectorBoletosFalso/DetectorBoletosFalso.jsx'
 
 function AppRoutes() {
   return (
@@ -63,7 +66,10 @@ function AppRoutes() {
               <Route path ='/DetectorLink' element={<DetectorLink />}/>       
               <Route path ='/DetectorLinkfalso' element={<DetectorLinkfalso />}/>   
               <Route path ='/DetectorLinkverdadeiro' element={<DetectorLinkverdadeiro/>}/>
-              <Route path ='/login' element={<Login />}/>                  
+              <Route path ='/login' element={<Login />}/>
+              <Route path ='/DetectorBoletos' element={<DetectorBoletos />} />
+              <Route path ='/DetectorBoletosVerdadeiros' element={<DetectorBoletosVerdadeiros />} />
+              <Route path ='/DetectorBoletosFalso' element={<DetectorBoletosFalso />} />                  
             </Routes>
 
         </DeviceMockup>
