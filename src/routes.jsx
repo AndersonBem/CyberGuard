@@ -27,7 +27,7 @@ import Comunidade from './pages/Comunidade/comunidade.jsx'
 import DetectorLink from './pages/DetectorLink/DetectorLink.jsx'
 import DetectorLinkfalso from './pages/DetectorLinkfalso/DetectorLinkfalso.jsx'
 import DetectorLinkverdadeiro from './pages/DetectorLinkverdadeiro/DetectorLinkverdadeiro.jsx'
-
+import Login from './pages/Login/Login.jsx'
 
 function AppRoutes() {
   return (
@@ -62,7 +62,8 @@ function AppRoutes() {
               <Route path ='/Comunidade' element={<Comunidade />}/>
               <Route path ='/DetectorLink' element={<DetectorLink />}/>       
               <Route path ='/DetectorLinkfalso' element={<DetectorLinkfalso />}/>   
-              <Route path ='/DetectorLinkverdadeiro' element={<DetectorLinkverdadeiro/>}/>                 
+              <Route path ='/DetectorLinkverdadeiro' element={<DetectorLinkverdadeiro/>}/>
+              <Route path ='/login' element={<Login />}/>                  
             </Routes>
 
         </DeviceMockup>

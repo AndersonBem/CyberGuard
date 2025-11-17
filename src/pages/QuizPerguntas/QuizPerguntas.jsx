@@ -8,7 +8,9 @@ import CardLaranja from "../../componentes/CardLaranja";
 
 export default function QuizPerguntas() {
   const quizzes = [
-    { id: 1, label: "Resposta Incorreta", correct: false, explanation: "Porque X, Y, Z..." },
+    { id: 1, label: "Resposta Incorreta", 
+      correct: false, 
+      explanation: "Porque X, Y, Z..." },
     { id: 2, label: "Resposta Correta",   correct: true,  explanation: "Correta pois A, B, C..." },
     { id: 3, label: "Resposta Incorreta", correct: false, explanation: "Não atende ao critério tal..." },
   ];
@@ -53,9 +55,7 @@ export default function QuizPerguntas() {
         <p className="quiz-subtitle">
           Título do quiz selecionado: <br />
           Pergunta 1:<br />
-          ......................................................<br />
-          ......................................................<br />
-          ......................................................<br />
+          Como você cadastra suas senhas?<br />
         </p>
 
 

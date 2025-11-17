@@ -27,7 +27,7 @@ export default function Cadastro() {
             Cadastrar
           </Link>
 
-          <Link to={''} className="link-login">
+          <Link to={'/login'} className="link-login">
             Possuo cadastro &gt;
           </Link>
         </form>

@@ -18,7 +18,7 @@ export default function CentraldeAnalise () {
      <section className="centraldeanalises" aria-labelledby="centraldeanalises">
           <h2 id="centraldeanalises">Central de Análises</h2>
 
-          <Link to="/verificar-link" className="img-button-verificarlink">
+          <Link to="/DetectorLink" className="img-button-verificarlink">
             <img
               src={verificarlink}
               alt="Verificar Link"
