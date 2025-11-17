@@ -1,0 +1,70 @@
+.vector2 {
+  width: 6.25rem;
+  height: 5.31rem;
+  position: relative;
+  top: 3.13rem;
+}
+
+.texto-alerta3 {
+  color: #fff;
+  text-align: center;
+  font-family: Inter;
+  font-size: 1.38rem;
+  font-style: normal;
+  font-weight: 1000;
+  line-height: normal;
+  position: relative;
+  top: 4.38rem;
+}
+
+.Escaneia2 {
+  width: 17.44rem;
+  height: 3.88rem;
+  flex-shrink: 0;
+  color: var(--cor-secundaria-hover);
+  text-align: center;
+  font-family: Arial;
+  font-size: 1.38rem;
+  font-style: normal;
+  font-weight: 550;
+  line-height: normal;
+  border-radius: 0.94rem;
+  background: #fff;
+  box-shadow: 0 0.25rem 0.25rem 0 rgba(0, 0, 0, 0.25);
+  position: relative;
+  top: 12.5rem;
+}
+.DetectorLinkverdadeiro {
+  padding: 1.25rem 1.38rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  box-sizing: border-box;
+  position: relative;
+  right: 0.31rem;
+}
+.link-container {
+  display: inline-block;
+  width: 18.44rem;
+  height: 4.88rem;
+  color: var(--cor-secundaria-hover);
+  text-align: center;
+  font-family: Arial;
+  font-size: 1.38rem;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 4.88rem;
+  text-decoration: none;
+  border-radius: 0.75rem;
+  background: var(--cor-fundo-card);
+  position: relative;
+  top: 7.5rem;
+  cursor: pointer;
+  border: 0.13rem solid black;
+  box-shadow: 0 0.13rem 0.31rem rgba(0, 0, 0, 0.4);
+  transition: all 0.2s ease-in-out;
+}
+
+.qrcode-container-link:hover {
+  transform: scale(1.02);
+}
