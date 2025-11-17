@@ -39,11 +39,11 @@ export default function Perfil () {
               <input type="password" id="senha" name="senha" placeholder="********" />
     
                <p>
-                <a href="/Perfil" className="link-senha">Alterar senha</a>
+                <a href="/cadastro" className="link-senha">Alterar senha</a>
               </p>
 
               <p>
-                <Link to="/cadastro" className="link-logout">Sair da conta</Link>
+                <Link to="/login" className="link-logout">Sair da conta</Link>
               </p>
       
             </form> 
