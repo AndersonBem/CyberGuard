@@ -41,6 +41,11 @@
 }
 
 .quiz-btn {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start; /* antes estava center */
+  gap: 0.35rem;
+
   width: 80%;
   background: #fff;
   color: var(--cor-secundaria);
@@ -55,18 +60,15 @@
   text-decoration: none;
 }
 
-.quiz-num{
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-  inline-size: 1.1em;                /* largura bem justa ao dígito */
-  block-size: 1.1em;
-  margin-right: 0.25rem;             /* espaço exato antes do texto */
+.quiz-num {
   font-size: 1rem;
   font-weight: 700;
+  margin: 0;
   color: var(--cor-secundaria);
-  border-radius: 0.25rem;            /* opcional */
+  min-width: 1.25rem;   /* fixa uma largurinha pro número */
+  text-align: center;   /* deixa o 1 centralizado nesse espaço */
 }
+
 
 .quiz-btn:hover {
   transform: scale(1.03);
@@ -77,5 +79,5 @@
 }
 
 .cardlaranja-espaco {
-  margin-top: 2rem; /* Ajuste conforme quiser: 1.5rem, 3rem etc */
+  margin-top: 2rem; 
 }

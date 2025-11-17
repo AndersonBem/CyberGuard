@@ -8,11 +8,15 @@ import CardLaranja from "../../componentes/CardLaranja";
 
 export default function QuizPerguntas() {
   const quizzes = [
-    { id: 1, label: "Resposta Incorreta", 
+    { id: 1, label: "Usar datas comemorativas, como aniversário", 
       correct: false, 
-      explanation: "Porque X, Y, Z..." },
-    { id: 2, label: "Resposta Correta",   correct: true,  explanation: "Correta pois A, B, C..." },
-    { id: 3, label: "Resposta Incorreta", correct: false, explanation: "Não atende ao critério tal..." },
+      explanation: "Datas como aniversário, são informações fáceis de se obter, por isso não são senhas seguras" },
+    { id: 2, label: "Senha compostas por números, letras e símbolos",
+      correct: true,  
+      explanation: "Usar letras, números e símbolos torna a senha muito mais difícil de adivinhar, reduzindo invasões e aumentando sua segurança online" },
+    { id: 3, label: "Sempre uso a mesma senha em todos os cadastros", 
+      correct: false, 
+      explanation: "Usar a mesma senha em todos os sites facilita invasões: se um serviço for vazado, todos os seus outros acessos ficam comprometidos." },
   ];
 
   const [selectedId, setSelectedId] = useState(null);
@@ -53,8 +57,6 @@ export default function QuizPerguntas() {
 
 
         <p className="quiz-subtitle">
-          Título do quiz selecionado: <br />
-          Pergunta 1:<br />
           Como você cadastra suas senhas?<br />
         </p>
 
