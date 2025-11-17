@@ -24,6 +24,10 @@ import FimQuiz from './pages/FimQuiz/FimQuiz.jsx'
 import CentraldeAnalise from './pages/CentraldeAnalises/CentraldeAnalises.jsx'
 import Perfil from './pages/Perfil/Perfil.jsx'
 import Comunidade from './pages/Comunidade/comunidade.jsx'
+import DetectorLink from './pages/DetectorLink/DetectorLink.jsx'
+import DetectorLinkfalso from './pages/DetectorLinkfalso/DetectorLinkfalso.jsx'
+import DetectorLinkverdadeiro from './pages/DetectorLinkverdadeiro/DetectorLinkverdadeiro.jsx'
+
 
 function AppRoutes() {
   return (
@@ -55,7 +59,10 @@ function AppRoutes() {
               <Route path ='/FimQuiz' element={<FimQuiz />} />
               <Route path ='/CentraldeAnalises' element={<CentraldeAnalise />}/>
               <Route path ='/Perfil' element={<Perfil />}/>
-              <Route path ='/Comunidade' element={<Comunidade />}/>                
+              <Route path ='/Comunidade' element={<Comunidade />}/>
+              <Route path ='/DetectorLink' element={<DetectorLink />}/>       
+              <Route path ='/DetectorLinkfalso' element={<DetectorLinkfalso />}/>   
+              <Route path ='/DetectorLinkverdadeiro' element={<DetectorLinkverdadeiro/>}/>                 
             </Routes>
 
         </DeviceMockup>
