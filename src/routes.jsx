@@ -1,5 +1,5 @@
 import { BrowserRouter, Route, Routes, useLocation } from "react-router-dom";
-import { AnimatePresence} from "framer-motion"; 
+import { AnimatePresence } from "framer-motion";
 import "./App.css";
 
 import DeviceMockup from "./layout/DeviceMockup.jsx";
@@ -35,48 +35,263 @@ import DetectorBoletosFalso from "./pages/DetectorBoletosFalso/DetectorBoletosFa
 import NovaPostagem from "./pages/NovaPostagem/NovaPostagem.jsx";
 import PageTransition from "./componentes/PageTransition/PageTransition.jsx";
 
-
-
-
 function AnimatedRoutes() {
   const location = useLocation();
+  const fromFooter = location.state?.fromFooter === true;
 
   return (
     <DeviceMockup>
       <AnimatePresence mode="wait">
         <Routes location={location} key={location.pathname}>
-          <Route path="/" element={<PageTransition><Home /></PageTransition>} />
-          <Route path="/*" element={<PageTransition><Home /></PageTransition>} />
+          <Route
+            path="/"
+            element={
+              <PageTransition fromFooter={fromFooter}>
+                <Home />
+              </PageTransition>
+            }
+          />
+          <Route
+            path="/*"
+            element={
+              <PageTransition fromFooter={fromFooter}>
+                <Home />
+              </PageTransition>
+            }
+          />
 
-          <Route path="/aprenda" element={<PageTransition><Aprenda /></PageTransition>} />
-          <Route path="/videoaula/:id" element={<PageTransition><VideoAula /></PageTransition>} />
-          <Route path="/meuscertificados" element={<PageTransition><MeusCertificados /></PageTransition>} />
-          <Route path="/certificado/:id" element={<PageTransition><Certificado /></PageTransition>} />
-          <Route path="/quiz" element={<PageTransition><Quiz /></PageTransition>} />
-          <Route path="/quizperguntas" element={<PageTransition><QuizPerguntas /></PageTransition>} />
-          <Route path="/bemvindocom" element={<PageTransition><BemVindoCom /></PageTransition>} />
-          <Route path="/cadastro" element={<PageTransition><Cadastro /></PageTransition>} />
-          <Route path="/Alerta" element={<PageTransition><Alerta /></PageTransition>} />
-          <Route path="/Ranking" element={<PageTransition><Ranking /></PageTransition>} />
-          <Route path="/faleconosco" element={<PageTransition><FaleConosco /></PageTransition>} />
-          <Route path="/MissoesDiarias" element={<PageTransition><MissoesDiarias /></PageTransition>} />
-          <Route path="/DetectorQrcode" element={<PageTransition><DetectorQrcodes /></PageTransition>} />
-          <Route path="/DetectorQRfalso" element={<PageTransition><DetectorQRfalso /></PageTransition>} />
-          <Route path="/DetectorQRverdadeiro" element={<PageTransition><DetectorQRverdadeiro /></PageTransition>} />
-          <Route path="/relatarGolpe" element={<PageTransition><RelatarGolpe /></PageTransition>} />
-          <Route path="/DenunciaEnviada" element={<PageTransition><DenunciaEnviada /></PageTransition>} />
-          <Route path="/FimQuiz" element={<PageTransition><FimQuiz /></PageTransition>} />
-          <Route path="/CentraldeAnalises" element={<PageTransition><CentraldeAnalise /></PageTransition>} />
-          <Route path="/Perfil" element={<PageTransition><Perfil /></PageTransition>} />
-          <Route path="/Comunidade" element={<PageTransition><Comunidade /></PageTransition>} />
-          <Route path="/DetectorLink" element={<PageTransition><DetectorLink /></PageTransition>} />
-          <Route path="/DetectorLinkfalso" element={<PageTransition><DetectorLinkfalso /></PageTransition>} />
-          <Route path="/DetectorLinkverdadeiro" element={<PageTransition><DetectorLinkverdadeiro /></PageTransition>} />
-          <Route path="/login" element={<PageTransition><Login /></PageTransition>} />
-          <Route path="/DetectorBoletos" element={<PageTransition><DetectorBoletos /></PageTransition>} />
-          <Route path="/DetectorBoletosVerdadeiros" element={<PageTransition><DetectorBoletosVerdadeiros /></PageTransition>} />
-          <Route path="/DetectorBoletosFalso" element={<PageTransition><DetectorBoletosFalso /></PageTransition>} />
-          <Route path="/NovaPostagem" element={<PageTransition><NovaPostagem /></PageTransition>} />
+          <Route
+            path="/aprenda"
+            element={
+              <PageTransition fromFooter={fromFooter}>
+                <Aprenda />
+              </PageTransition>
+            }
+          />
+          <Route
+            path="/videoaula/:id"
+            element={
+              <PageTransition fromFooter={fromFooter}>
+                <VideoAula />
+              </PageTransition>
+            }
+          />
+          <Route
+            path="/meuscertificados"
+            element={
+              <PageTransition fromFooter={fromFooter}>
+                <MeusCertificados />
+              </PageTransition>
+            }
+          />
+          <Route
+            path="/certificado/:id"
+            element={
+              <PageTransition fromFooter={fromFooter}>
+                <Certificado />
+              </PageTransition>
+            }
+          />
+          <Route
+            path="/quiz"
+            element={
+              <PageTransition fromFooter={fromFooter}>
+                <Quiz />
+              </PageTransition>
+            }
+          />
+          <Route
+            path="/quizperguntas"
+            element={
+              <PageTransition fromFooter={fromFooter}>
+                <QuizPerguntas />
+              </PageTransition>
+            }
+          />
+          <Route
+            path="/bemvindocom"
+            element={
+              <PageTransition fromFooter={fromFooter}>
+                <BemVindoCom />
+              </PageTransition>
+            }
+          />
+          <Route
+            path="/cadastro"
+            element={
+              <PageTransition fromFooter={fromFooter}>
+                <Cadastro />
+              </PageTransition>
+            }
+          />
+          <Route
+            path="/Alerta"
+            element={
+              <PageTransition fromFooter={fromFooter}>
+                <Alerta />
+              </PageTransition>
+            }
+          />
+          <Route
+            path="/Ranking"
+            element={
+              <PageTransition fromFooter={fromFooter}>
+                <Ranking />
+              </PageTransition>
+            }
+          />
+          <Route
+            path="/faleconosco"
+            element={
+              <PageTransition fromFooter={fromFooter}>
+                <FaleConosco />
+              </PageTransition>
+            }
+          />
+          <Route
+            path="/MissoesDiarias"
+            element={
+              <PageTransition fromFooter={fromFooter}>
+                <MissoesDiarias />
+              </PageTransition>
+            }
+          />
+          <Route
+            path="/DetectorQrcode"
+            element={
+              <PageTransition fromFooter={fromFooter}>
+                <DetectorQrcodes />
+              </PageTransition>
+            }
+          />
+          <Route
+            path="/DetectorQRfalso"
+            element={
+              <PageTransition fromFooter={fromFooter}>
+                <DetectorQRfalso />
+              </PageTransition>
+            }
+          />
+          <Route
+            path="/DetectorQRverdadeiro"
+            element={
+              <PageTransition fromFooter={fromFooter}>
+                <DetectorQRverdadeiro />
+              </PageTransition>
+            }
+          />
+          <Route
+            path="/relatarGolpe"
+            element={
+              <PageTransition fromFooter={fromFooter}>
+                <RelatarGolpe />
+              </PageTransition>
+            }
+          />
+          <Route
+            path="/DenunciaEnviada"
+            element={
+              <PageTransition fromFooter={fromFooter}>
+                <DenunciaEnviada />
+              </PageTransition>
+            }
+          />
+          <Route
+            path="/FimQuiz"
+            element={
+              <PageTransition fromFooter={fromFooter}>
+                <FimQuiz />
+              </PageTransition>
+            }
+          />
+          <Route
+            path="/CentraldeAnalises"
+            element={
+              <PageTransition fromFooter={fromFooter}>
+                <CentraldeAnalise />
+              </PageTransition>
+            }
+          />
+          <Route
+            path="/Perfil"
+            element={
+              <PageTransition fromFooter={fromFooter}>
+                <Perfil />
+              </PageTransition>
+            }
+          />
+          <Route
+            path="/Comunidade"
+            element={
+              <PageTransition fromFooter={fromFooter}>
+                <Comunidade />
+              </PageTransition>
+            }
+          />
+          <Route
+            path="/DetectorLink"
+            element={
+              <PageTransition fromFooter={fromFooter}>
+                <DetectorLink />
+              </PageTransition>
+            }
+          />
+          <Route
+            path="/DetectorLinkfalso"
+            element={
+              <PageTransition fromFooter={fromFooter}>
+                <DetectorLinkfalso />
+              </PageTransition>
+            }
+          />
+          <Route
+            path="/DetectorLinkverdadeiro"
+            element={
+              <PageTransition fromFooter={fromFooter}>
+                <DetectorLinkverdadeiro />
+              </PageTransition>
+            }
+          />
+          <Route
+            path="/login"
+            element={
+              <PageTransition fromFooter={fromFooter}>
+                <Login />
+              </PageTransition>
+            }
+          />
+          <Route
+            path="/DetectorBoletos"
+            element={
+              <PageTransition fromFooter={fromFooter}>
+                <DetectorBoletos />
+              </PageTransition>
+            }
+          />
+          <Route
+            path="/DetectorBoletosVerdadeiros"
+            element={
+              <PageTransition fromFooter={fromFooter}>
+                <DetectorBoletosVerdadeiros />
+              </PageTransition>
+            }
+          />
+          <Route
+            path="/DetectorBoletosFalso"
+            element={
+              <PageTransition fromFooter={fromFooter}>
+                <DetectorBoletosFalso />
+              </PageTransition>
+            }
+          />
+          <Route
+            path="/NovaPostagem"
+            element={
+              <PageTransition fromFooter={fromFooter}>
+                <NovaPostagem />
+              </PageTransition>
+            }
+          />
         </Routes>
       </AnimatePresence>
     </DeviceMockup>
