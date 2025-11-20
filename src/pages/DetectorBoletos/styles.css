@@ -1,11 +1,13 @@
 .DetectordeQRcodefalso {
-  padding: 0.25rem;
+  padding: 1.25rem 1.38rem;
   display: flex;
   flex-direction: column;
   align-items: center;
   box-sizing: border-box;
-  position: relative;
-  right: 0.31rem;
+}
+
+.cardlaranja {
+  margin: 1.25rem auto 0;  /* auto nas laterais centraliza */
 }
 
 .DetectordeQRcodefalso h2 {
@@ -82,8 +84,8 @@
 }
 
 .qrcode-imagem {
-  width: 7.31rem;
-  height: 7.31rem;
+  width: 9.31rem;
+  height: 9.31rem;
   position: relative;
   top: 4.38rem;
 }
@@ -116,4 +118,17 @@
 
 .qrcode-select {
   margin-top: 9rem;
+}
+
+.back {
+  align-self: flex-start;
+  margin-top: 1.25rem;
+  background: var(--cor-fundo-card);
+  color: var(--cor-primaria);
+  font-weight: 700;
+  border-radius: 0.625rem;
+  padding: 0.375rem 0.875rem;
+  text-decoration: none;
+  box-shadow: 0 0.25rem 0.75rem rgba(0, 0, 0, 0.12);
+  transition: all 0.2s ease;
 }

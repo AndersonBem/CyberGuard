@@ -11,7 +11,7 @@ export default function Alertas() {
       <Header />
       <div className="app-content">
         <section className="alertaNovosGolpes" aria-labelledby="alertaNovosGolpes-title">
-          <h2 id="alertaNovosGolpes-title">Novos Golpes</h2>
+          <h2 id="alertaNovosGolpes-title">Fique Atento!</h2>
 
           <CardLaranja>
             <div className="cert-banner">

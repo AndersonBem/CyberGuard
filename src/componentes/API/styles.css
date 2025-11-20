@@ -74,7 +74,7 @@
 /* Botão/link */
 .noticia-link {
   display: inline-block;
-  background-color: #ff6600;
+  background-color: var(--cor-secundaria);
   color: white;
   padding: 8px 14px;
   border-radius: 8px;
@@ -82,6 +82,7 @@
   font-size: 13px;
   font-weight: 500;
   transition: background-color 0.2s;
+  margin-bottom: 1rem;
 }
 
 .noticia-link:hover {

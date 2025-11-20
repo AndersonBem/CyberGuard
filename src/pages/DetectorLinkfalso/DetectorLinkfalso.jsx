@@ -12,9 +12,9 @@ export default function DetectorLinkfalso() {
       <div className="app-content">
         <section className="DetectordeQRcodefalso" aria-labelledby="DetectordeQRcodefalso-title">
           
-
+          <Link to="/DetectorLink" className="back" aria-label="Voltar">← Voltar</Link>
           <CardLaranja>
-
+          
 
 
           <img className= "falsoz" src={falsox} alt="falsoz" />

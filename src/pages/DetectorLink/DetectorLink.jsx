@@ -22,7 +22,7 @@ export default function DetectorLink() {
           aria-labelledby="DetectordeQRcodefalso-title"
         > <h2 id="DetectordeQRcodefalso-title">Detector de Links Falsos </h2>
 
-        
+          <Link to="/CentraldeAnalises" className="back" aria-label="Voltar">← Voltar</Link>
           <CardLaranja>
             <img className= "link" src={link} alt="link" />
             <button type="button" className="texto-container" onClick={() => alert("Botão clicado!")}>

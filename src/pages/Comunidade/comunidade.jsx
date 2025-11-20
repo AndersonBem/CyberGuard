@@ -11,7 +11,7 @@ export default function BasePage() {
             <p className="P1">
              Bem-vindo à comunidade <span className="span1">CyberGuard!</span>
             </p>
-            <Link to="/aprenda" className="back" aria-label="Voltar">← Voltar</Link>
+            <Link to="/bemvindocom" className="back" aria-label="Voltar">← Voltar</Link>
             <div className="app-content">
                 <div className="container">
                     <div className="post-card">
@@ -25,7 +25,9 @@ export default function BasePage() {
 
                         <div className="actions">
                             <span className="action">♡</span>
-                            <span className="action">💬</span>
+                            <Link to="/NovaPostagem" className="action">
+                                <span className="action">💬</span>
+                            </Link>
                         </div>
 
                         <div className="info">
@@ -46,7 +48,9 @@ export default function BasePage() {
 
                         <div className="actions">
                             <span className="action">♡</span>
-                            <span className="action">💬</span>
+                            <Link to="/NovaPostagem" className="action">
+                                <span className="action">💬</span>
+                            </Link>
                         </div>
 
                         <div className="info">
@@ -54,7 +58,12 @@ export default function BasePage() {
                             <span>Ontem</span>
                         </div>
                     </div>
+                </div>
 
+                <div className="nova-postagem-wrapper">
+                <Link to="/NovaPostagem" className="btn-nova-postagem">
+                    + Nova Postagem
+                </Link>
                 </div>
             </div>
 

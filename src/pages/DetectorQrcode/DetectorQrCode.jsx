@@ -14,7 +14,7 @@ export default function DetectorQrcodes() {
       <div className="app-content">
         <section className="DetectordeQRcodefalso" aria-labelledby="DetectordeQRcodefalso-title">
           <h2 id="DetectordeQRcodefalso-title">Detector de QR code falso </h2>
-
+          <Link to="/CentraldeAnalises" className="back" aria-label="Voltar">← Voltar</Link>
           <CardLaranja>
      
 
