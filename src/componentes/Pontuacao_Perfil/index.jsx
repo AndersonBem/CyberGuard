@@ -1,5 +1,5 @@
 import React from "react";
-import "./Styles.css";
+import "./styles.css";
 
 const Pontuacao = () => {
   // Simulação de dados (pode vir de props ou API)

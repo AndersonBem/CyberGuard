@@ -1,7 +1,7 @@
 // DenunciaEnviada.jsx
 
 import iconeCheck from './assets/iconeCheck.svg';
-import Footer from "../../componentes/footer";
+import Footer from "../../componentes/Footer";
 import Header from "../../componentes/Header";
 import "./styles.css"; 
 import { Link } from 'react-router-dom';

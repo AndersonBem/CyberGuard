@@ -1,5 +1,5 @@
 import { useState } from "react";
-import Footer from "../../componentes/footer";
+import Footer from "../../componentes/Footer";
 import Header from "../../componentes/Header";
 import "./styles.css";
 import CardLaranja from "../../componentes/CardLaranja";

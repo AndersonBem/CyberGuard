@@ -3,21 +3,36 @@ import "./styles.css";
 
 const Noticias = () => {
   const [noticias, setNoticias] = useState([]);
+  const [erro, setErro] = useState(null); 
 
   useEffect(() => {
-    fetch(
-      "https://gnews.io/api/v4/search?q=golpes%20digitais&lang=pt&country=br&max=5&apikey=062bf2863accbef480ee0b28ebeff077"
-    )
-      .then((response) => response.json())
-      .then((data) => setNoticias(data.articles || []))
-      .catch((error) => console.error("Erro ao buscar notícias:", error));
+    async function carregarNoticias() {
+      try {
+
+        const response = await fetch("/api/noticias");
+
+        if (!response.ok) {
+          throw new Error("Resposta não OK da API /api/noticias");
+        }
+
+        const data = await response.json();
+        setNoticias(data.articles || []);
+      } catch (err) {
+        console.error("Erro ao buscar notícias:", err);
+        setErro("Não foi possível carregar as notícias.");
+      }
+    }
+
+    carregarNoticias();
   }, []);
 
   return (
     <div className="noticias-container">
       <h1 className="titulo-pagina">📰 Notícias</h1>
 
-      {noticias.length === 0 ? (
+      {erro && <p className="erro-texto">{erro}</p>}
+
+      {noticias.length === 0 && !erro ? (
         <p className="loading-text">Carregando notícias...</p>
       ) : (
         noticias.map((item, index) => (

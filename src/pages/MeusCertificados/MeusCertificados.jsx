@@ -1,6 +1,6 @@
 import CardLaranja from "../../componentes/CardLaranja/index";
 import CertificadosList from "../../componentes/CertificadoList/index";
-import Footer from "../../componentes/footer";
+import Footer from "../../componentes/Footer";
 import Header from "../../componentes/Header";
 import certific from "./assets/certific.svg";
 import "./styles.css";

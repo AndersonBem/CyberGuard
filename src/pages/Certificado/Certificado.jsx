@@ -1,6 +1,6 @@
 import { useParams, useLocation } from "react-router-dom";
 import CardLaranja from "../../componentes/CardLaranja";
-import Footer from "../../componentes/footer";
+import Footer from "../../componentes/Footer";
 import Header from "../../componentes/Header";
 import DeviceMockup from "../../layout/DeviceMockup";
 import logo from "./assets/certificLogo.svg";

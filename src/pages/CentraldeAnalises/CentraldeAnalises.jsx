@@ -1,11 +1,11 @@
 import { Link } from "react-router-dom";
-import verificarlink from "../CentraldeAnalises/assets/verificarlink3.png";
+import verificarlink from "../CentraldeAnalises/assets/verificarLink3.png";
 import escanearQrcode from "../CentraldeAnalises/assets/escanearQrcode3.png";
 import analisarBoleto from "../CentraldeAnalises/assets/analisarBoleto3.png";
 import "./styles.css";
 import Noticias from "../../componentes/API/Noticias";
 import Header from "../../componentes/Header";
-import Footer from "../../componentes/footer";
+import Footer from "../../componentes/Footer";
 
 
 export default function CentraldeAnalise () {

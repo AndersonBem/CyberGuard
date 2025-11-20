@@ -1,5 +1,5 @@
 import { Link } from "react-router-dom";
-import Footer from "../../componentes/footer";
+import Footer from "../../componentes/Footer";
 import Header from "../../componentes/Header";
 import MissaoIcon from "./assets/smile.svg";
 import SimuladorIcon from "./assets/simuladores.svg";
@@ -7,7 +7,7 @@ import AprendaIcon from "./assets/aprenda.svg";
 import RankingIcon from "./assets/ranking.svg";
 import DenunciaIcon from "./assets/denuncia.svg";
 import ContatoIcon from "./assets/telefone.svg";
-import AlertaIcon from "./assets/alertaGolpe.svg";
+import AlertaIcon from "./assets/alertagolpe.svg";
 import "./styles.css";
 
 export default function Home() {
