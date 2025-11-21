@@ -24,7 +24,7 @@ export default function Perfil () {
         Alterar foto
       </label>
       <input type="file" id="trocar-foto" accept="image/*" />
-    </div>
+            </div>  
             <form>
               <label htmlFor="nome">Nome completo</label>
               <input type="text" id="nome" name="nome" placeholder="Maria Aparecida" />

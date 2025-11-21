@@ -11,7 +11,7 @@ export default function BasePage() {
             <p className="P1">
              Bem-vindo à comunidade <span className="span1">CyberGuard!</span>
             </p>
-            <Link to="/bemvindocom" className="back" aria-label="Voltar">← Voltar</Link>
+            <Link to="/bemvindocom" className="back_comunidade" aria-label="Voltar">← Voltar</Link>
             <div className="app-content">
                 <div className="container">
                     <div className="post-card">

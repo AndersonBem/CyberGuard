@@ -20,8 +20,10 @@ export default function DetectorLink() {
         <section
           className="DetectordeQRcodefalso"
           aria-labelledby="DetectordeQRcodefalso-title"
-        > <h2 id="DetectordeQRcodefalso-title">Detector de Links Falsos </h2>
-
+          > 
+          <div className='titulo-link' >
+            <h2 id="DetectordeQRcodefalso-title">Detector de Links Falsos </h2>
+          </div>
           <Link to="/CentraldeAnalises" className="back" aria-label="Voltar">← Voltar</Link>
           <CardLaranja>
             <img className= "link" src={link} alt="link" />
