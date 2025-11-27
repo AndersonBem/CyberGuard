@@ -34,6 +34,7 @@ import DetectorBoletosVerdadeiros from "./pages/DetectorBoletosVerdadeiros/Detec
 import DetectorBoletosFalso from "./pages/DetectorBoletosFalso/DetectorBoletosFalso.jsx";
 import NovaPostagem from "./pages/NovaPostagem/NovaPostagem.jsx";
 import PageTransition from "./componentes/PageTransition/PageTransition.jsx";
+import AlertaDetalhe from "./pages/AlertaDetalhe";
 
 function AnimatedRoutes() {
   const location = useLocation();
@@ -289,6 +290,14 @@ function AnimatedRoutes() {
             element={
               <PageTransition fromFooter={fromFooter}>
                 <NovaPostagem />
+              </PageTransition>
+            }
+          />
+          <Route
+            path="/alertas/:id"
+            element={
+              <PageTransition fromFooter={fromFooter}>
+                {<AlertaDetalhe />}
               </PageTransition>
             }
           />

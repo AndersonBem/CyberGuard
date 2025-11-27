@@ -38,13 +38,15 @@ export default function Perfil () {
               <label htmlFor="senha">Senha Atual</label>
               <input type="password" id="senha" name="senha" placeholder="********" />
     
-               <p>
-                <a href="/cadastro" className="link-senha">Alterar senha</a>
-              </p>
+              <div className="perfil-links">
+                <Link to="/cadastro" className="link-senha">
+                  Alterar senha
+                </Link>
 
-              <p>
-                <Link to="/login" className="link-logout">Sair da conta</Link>
-              </p>
+                <Link to="/login" className="link-logout">
+                  Sair da conta
+                </Link>
+              </div>
       
             </form> 
           </div>

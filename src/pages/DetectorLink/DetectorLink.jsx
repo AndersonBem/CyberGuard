@@ -27,12 +27,13 @@ export default function DetectorLink() {
           <Link to="/CentraldeAnalises" className="back" aria-label="Voltar">← Voltar</Link>
           <CardLaranja>
             <img className= "link" src={link} alt="link" />
-            <button type="button" className="texto-container" onClick={() => alert("Botão clicado!")}>
-        Identifique Links Falsos
-            </button>
-            <button type="button" className="texto-container2" onClick={() => alert("Botão clicado!")}>
-        Cole seu link aqui
-            </button>
+          <input
+            type="text"
+            className="input-link"
+            placeholder="Digite seu link aqui"
+            onChange={(e) => setOpcao(e.target.value)}
+          />
+
        
              {opcao ? (
               <Link

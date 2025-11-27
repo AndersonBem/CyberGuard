@@ -1,0 +1,95 @@
+/* Espaço entre o header e o card azul */
+.alerta-detalhe {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 1.5rem; /* distancia do header */
+}
+
+/* Conteúdo interno do CardLaranja */
+.alerta-detalhe-conteudo {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.9rem;
+  padding: 1.25rem 1.3rem 1.5rem;
+}
+
+/* wrapper que controla a distância do header */
+.alerta-back-wrapper {
+  width: 100%;
+  display: flex;
+  justify-content: flex-start;
+  margin-top: .5rem;   
+  margin-left: 1.25rem;
+  margin-bottom: -.5rem;
+}
+
+/* botão em si, sem margin-top */
+.alerta-back-top {
+  padding: 0.35rem 0.75rem;
+  border-radius: 0.75rem;
+  background-color: var(--cor-fundo-card); 
+  color: var(--cor-secundaria);
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 0.9rem;
+  box-shadow: 0 0.15rem 0.35rem rgba(0, 0, 0, 0.15);
+}
+
+.alerta-back-top:hover {
+  filter: brightness(0.97);
+}
+
+/* Centraliza o quadrado do ícone */
+.alerta-detalhe-icone-wrapper {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+
+/* Quadrado branco ao redor do ícone vermelho */
+.alerta-detalhe-icone-quadro {
+  width: 3.5rem;
+  height: 3.5rem;
+  background-color: #ffffff;
+  border-radius: 0.75rem;
+  padding: 0.45rem 0.6rem;
+  box-shadow: 0 0.15rem 0.35rem rgba(0, 0, 0, 0.12);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: -1.5rem;
+  margin-bottom: -1rem;
+}
+
+.alerta-detalhe-icone-quadro img {
+  width: 2.5rem;
+  height: 2.5rem;
+}
+
+/* Título centralizado em branco */
+.alerta-detalhe-titulo {
+  text-align: center;
+  color: var(--cor-fundo-card); 
+  font-family: var(--fonte-principal);
+  font-size: 1.05rem;
+  font-weight: 700;
+}
+
+/* Caixa branca para o texto do golpe */
+.alerta-detalhe-box-texto {
+  width: 100%;
+  background-color: #ffffff;
+  border-radius: 0.75rem;
+  padding: 0.9rem 1rem;
+  box-shadow: 0 0.15rem 0.4rem rgba(0, 0, 0, 0.18);
+}
+
+/* Texto azul dentro da caixa branca */
+.alerta-detalhe-texto {
+  font-size: 0.92rem;
+  line-height: 1.5;
+  color: var(--cor-secundaria);
+  white-space: pre-line; 
+}

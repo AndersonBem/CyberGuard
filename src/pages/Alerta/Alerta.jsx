@@ -1,16 +1,22 @@
-import CardLaranja from "../../componentes/CardLaranja/index";
+// src/paginas/Alertas/index.jsx
+
+import { Link } from "react-router-dom";
+import CardLaranja from "../../componentes/CardLaranja";
 import Footer from "../../componentes/Footer";
 import Header from "../../componentes/Header";
 import alerta from "./assets/alerta.png";
 import "./styles.css";
-import Alertalist from "../../componentes/Alertalist";
+import { ALERTAS } from "./alertasData";
 
 export default function Alertas() {
   return (
     <div className="app-shell">
       <Header />
       <div className="app-content">
-        <section className="alertaNovosGolpes" aria-labelledby="alertaNovosGolpes-title">
+        <section
+          className="alertaNovosGolpes"
+          aria-labelledby="alertaNovosGolpes-title"
+        >
           <h2 id="alertaNovosGolpes-title">Fique Atento!</h2>
 
           <CardLaranja>
@@ -20,15 +26,15 @@ export default function Alertas() {
               </div>
             </div>
 
-            
-            <Alertalist mensagem="Golpe do Pix com Devolução" />
-
-            <Alertalist mensagem="Assinaturas Automáticas em Testes Grátis" />
-
-            <Alertalist mensagem="Links de Rastreamento de Encomenda" />
-
-            <Alertalist mensagem="Pix Programado" />
-
+            {ALERTAS.map((item) => (
+              <Link
+                key={item.id}
+                to={`/alertas/${item.id}`}
+                className="alerta-container"
+              >
+                <p className="alerta-texto">{item.titulo}</p>
+              </Link>
+            ))}
           </CardLaranja>
         </section>
       </div>

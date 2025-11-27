@@ -4,7 +4,7 @@ import "./styles.css"
 import logo from "./assets/logo.png";
 import logoGoogle from "./assets/google.svg";
 
-export default function Cadastro() {
+export default function Login() {
   return (
     <div className="cadastro-container">
       <div className="cadastro-card">
