@@ -40,14 +40,14 @@ export default function DetectorLink() {
                 to={opcao === "verdadeiro" ? "/DetectorLinkverdadeiro" : "/DetectorLinkfalso"}
                 className="link-container"
               >
-                ESCANEAR LINK
+                ANALISAR LINK
               </Link>
             ) : (
               <Link
                 className="link-container"
                 to ={''}
               >
-                ESCANEAR LINK
+                ANALISAR LINK
               </Link>
             )}
             
